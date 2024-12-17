@@ -1,0 +1,11 @@
+{{ for index, project of projects }}
+    <a class="project-list__post" href="{{ project.url }}">
+        <img class="project-list__post--image" src="{{ project.image }}">
+        <div class="project-list__post--info">
+            <h3 class="project-list__post--title">{{ project.title }}</h3>
+            <div class="project-list__post--tags">
+                {{ project.tags |> join(', ') }}
+            </div>
+        </div>
+    </a>
+{{ /for }}

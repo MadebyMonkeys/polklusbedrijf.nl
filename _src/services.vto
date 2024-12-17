@@ -1,0 +1,31 @@
+---
+layout: layouts/page.vto
+
+subtitle: "Diensten"
+title: "Ik kan u voorzien van de volgende diensten"
+description: ""
+
+metas:
+  title: =title
+  description: =description
+
+menu:
+  visible: true
+  title: Diensten
+  url: "/services"
+  order: 3
+---
+<section class="[ services ] [ full-width ] [ region flow ]">
+    <h3 class="section-subtitle">{{ subtitle }}</h3>
+    <h1 class="section-title">{{ title }}</h1>
+    <hr />
+    <div class="grid-auto-fit" data-cols="three">
+        {{ set services = search.pages("type=service", "order=desc") }}
+        {{ for service of services }}
+        <a href="{{ service.url }}" class="service card">
+            <img src="{{ service.image }}" alt="{{ service.title }}">
+            <span class="flex ai-center">{{ service.title }} <ion-icon name="arrow-forward-circle-outline"></ion-icon></span>
+        </a>
+        {{ /for }}
+    </div>
+</section>

@@ -1,0 +1,337 @@
+@use "scss/abstracts" as *;
+
+@forward "scss/base";
+@forward "scss/compositions";
+@forward "scss/utilities";
+@forward "scss/blocks";
+
+
+
+// -----------------------------------------------------------------------------
+// GLOBALS
+// -----------------------------------------------------------------------------
+
+h1, h2, h3 {}
+
+h1, .h1 {
+    --heading-font-size: var(--fs-800);
+}
+
+h2, .h2 {
+    --heading-font-size: var(--fs-700);
+}
+
+h3, .h3 {
+    --heading-font-size: var(--fs-600);
+}
+
+
+.region {
+    padding-block: var(--region-space, var(--space-l-2xl));
+}
+
+hr {
+    margin-block: var(--space-s-l);
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: var(--neutral-150);
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.jc-between {
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+}
+
+.rounded-image {
+    border-radius: var(--space-s) var(--space-s) var(--space-s) 0;
+}
+
+.text--centered {
+    margin: auto;
+}
+
+
+
+//
+//
+//
+
+.section-title {
+    margin-block-start: var(--space-xs);
+}
+
+.section-subtitle {
+    color: var(--primary-350);
+    font-size: var(--fs-300);
+    line-height: 1.1;
+    padding-left: 44px;
+    position: relative;
+    max-width: unset;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(-50%);
+        background: url("/icons/icon-sub-heading.svg")no-repeat left center;
+        background-size: auto;
+        background-size: cover;
+        width: 36px;
+        height: 8px;
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Compositions
+// -----------------------------------------------------------------------------
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    text-decoration: none;
+
+    svg {
+        height: 6ex;
+        path {
+            fill: var(--secondary-800);
+        }
+    }
+
+    &__name {
+        color: var(--secondary-850);
+        font-size: var(--fs-300);
+        font-weight: var(--fw-bold);
+        text-transform: uppercase;
+    }
+}
+
+
+.hero {
+    --region-space: 12.12vmax;
+}
+
+.av.narrow {
+    margin-inline: auto;
+}
+
+
+.about {
+    position: relative;
+
+    .checkmarks li {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-xs);
+        color: var(--secondary-800);
+        font-weight: var(--fw-medium);
+
+        ion-icon {
+            flex-shrink: 0;
+            color: var(--primary-350);
+        }
+    }
+}
+
+
+.services {
+
+    .service {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        overflow: clip;
+        border-radius: var(--space-s) var(--space-s) var(--space-s) 0;
+
+        &:is(:hover, :focus-visible) {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+            img {
+                scale: 1.1;
+            }
+        }
+
+        img {
+            scale: 1;
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 3/2;
+            object-fit: cover;
+            transition: scale 300ms ease-in-out;
+        }
+        
+        span {
+            position: absolute;
+            content: " ";
+            bottom: 0;
+            left: 0;
+            color: var(--neutral-50);
+            background: var(--secondary-800);
+            padding: var(--space-s);
+            border-radius: 0 var(--space-2xs) 0 0;
+            z-index: 2;
+            transition: all 300ms ease;
+
+            ion-icon {
+                margin-left: var(--space-xs);
+            }
+        }
+
+        &:is(:hover, :focus-visible) span {
+            color: var(--secondary-950);
+            background: var(--primary-400);
+            font-weight: var(--fw-medium);
+        }
+    }
+}
+
+
+
+.testimonials {
+
+    .carousel {
+        grid-column: span 2;
+
+        &__item {
+            padding-inline: var(--space-3xs);
+        }
+    }
+
+    .controls {
+        margin-top: var(--space-s-l);
+    }
+
+    .testimonial {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        &__content {
+            max-width: unset;
+
+            &::before,
+            &::after {
+                font-size: var(--fs-700);
+                font-weight: var(--fw-bold);
+            }
+
+            &::before {
+                content: "\201C";
+            }
+
+            &::after {
+                float: right;
+                content: "\201E";
+            }
+
+            p {
+                font-size: var(--fs-500);
+                margin-top: 0;
+                max-width: unset;
+            }
+        }
+
+        &__author {
+            color: var(--neutral-800);
+            font-size: var(--fs-400);
+            font-weight: var(--fw-medium);
+            font-style: italic;
+        }
+    }
+
+    
+
+    cite {
+        display: block;
+    }
+}
+
+
+.company-info {
+    margin-top: var(--space-l);
+
+    li {
+        ion-icon {
+            color: var(--secondary-800);
+        }
+    }
+}
+
+
+
+
+.button {
+    letter-spacing: .15ch;
+
+    &.animated {
+        ion-icon {
+            rotate: -45deg;
+            transition: rotate 300ms ease-in-out;
+        }
+    
+        &:is(:hover) {
+            ion-icon {
+                rotate: 0deg;
+            }
+        }
+    }
+}
+
+.socials {
+    .link {
+        margin-right: var(--space-s-l);
+
+        ion-icon {
+            font-size: 48px;
+            transition: all 300ms ease-in-out;
+        }
+
+        &:is(:hover) {
+            ion-icon {
+                color: var(--primary-350);
+            }
+        }
+    }
+}
+
+.site-nav {
+    .button[data-ghost-button] {
+        --button-foreground: var(--secondary-950);
+        font-size: var(--fs-300);
+    }
+}
+
+
+.widget {
+    background: var(--secondary-50);
+    padding: var(--space-s-l);
+}
+
+
+.projecten .grid-auto-fit {
+    --grid-min-col-size: clamp(16rem, 50vw, 26rem);
+    margin-top: var(--space-s-l);
+}
+
+.tags {
+    color: var(--neutral-650);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-medium);
+    text-transform: uppercase;
+}

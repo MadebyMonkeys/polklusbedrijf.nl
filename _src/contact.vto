@@ -1,0 +1,74 @@
+---
+layout: layouts/page.vto
+
+title: Contact
+description: Some contact description
+
+metas:
+  title: =title
+  description: =description
+
+menu:
+  visible: true
+  title: Contact
+  url: "/contact"
+  order: 5
+
+contact_section:
+  subtitle: Contact
+  title: Kom in contact
+  body: "Mocht u verder nog vragen hebben stel deze dan gerust! Wij zullen deze zo spoedig mogelijk beantwoorden."
+
+---
+
+<section class="[ contact ] [ full-width ] [ region ]">
+    <div class="grid-auto-fit" data-cols="two">
+        <div class="content flow">
+            <h3 class="section-subtitle">{{ contact_section.subtitle }}</h3>
+            <h1 class="section-title">{{ contact_section.title }}</h1>
+            <p>{{ contact_section.body }}</p>
+            <ul class="company-info flow" role="list">
+                <!-- <li><ion-icon name="pin"></ion-icon> {{ site.address.street }} <br> {{ site.address.zipcode }} {{ site.address.city }}</li> -->
+                <li class="flex-group"><ion-icon size="large" name="call"></ion-icon> <a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+                <li class="flex-group"><ion-icon size="large" name="mail"></ion-icon> {{ site.email }}</li>
+                <li class="socials flow">
+                    <h3>Onze socials</h3>
+                    <div class="social-links">
+                        {{ for social of site.socials }}
+                            <a href="{{ social.link }}" class="link"><ion-icon size="xlarge" name="logo-{{ social.icon }}"></ion-icon></a>
+                        {{ /for }}
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <form action="https://formsubmit.co/info@polklusbedrijf.nl" enctype="multipart/form-data" method="POST" class="flow">
+                
+            <input type="hidden" name="_subject" value="Nieuwe contact bericht">
+            <input type="hidden" name="_next" value="/bedankt">
+
+            <div class="field-group mt-0">
+                <label for="name">Naam</label>
+                <input class="u-mv" id="name" type="text" name="name" required>
+            </div>
+
+            <div class="field-group">
+                <label for="phone">Telefoon nr.</label>
+                <input class="u-mv" id="phone" type="tel" name="Telefoon nr" required>
+            </div>
+
+            <div class="field-group">
+                <label for="email">Email</label>
+                <input class="u-mv" id="email" type="email" name="email" required>
+            </div>
+
+            <div class="field-group">
+                <label for="message">Uw bericht</label>
+                <textarea class="u-mv" name="bericht" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+            <button class="button" type="submit">Verzend</button>
+
+        </form>
+    </div>
+</section>
+

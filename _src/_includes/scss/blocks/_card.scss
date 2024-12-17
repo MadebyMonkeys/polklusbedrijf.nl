@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+//
+//
+//
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+        padding: var(--space-m);
+    }
+}

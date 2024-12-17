@@ -1,0 +1,97 @@
+---
+layout: layouts/page.vto
+
+title: Homepage
+description: Homepage beschrijving
+
+metas:
+  description: =description
+
+menu:
+  visible: true
+  title: Home
+  url: "/"
+  order: 1
+
+hasCarousel: true
+
+hero_section:
+  subtitle: "Welkom bij Pol klusbedrijf"
+  title: "Bouwt uw droom tot werkelijkheid"
+  body: "Geen huis is het zelfde, elke smaak is anders en soms dienen projecten geheel op maat te worden uitgewerkt. Pol Klusbedrijf staat voor u klaar, is flexibel en stelt uw tevredenheid hoog in het vaandel."
+
+about_section:
+  subtitle: "Over mij"
+  title: "Uw betrouwbare partner in bouwvakmanschap."
+  body: "Door zijn ruime kennis en ervaring is Ricardo Pol de aangewezen vakman om al uw klussen in en om uw huis aan toe te vertrouwen. Meedenkend, transparant, eerlijkheid en openheid is waar hij voor staat."
+  list:
+    - title: "Ongeëvenaarde expertise met tientallen jaren ervaring"
+    - title: "Toewijding aan kwaliteit en precisie"
+    - title: "Duurzame en verantwoorde bouwpraktijken"
+  button:
+    title: Over mij
+    url: "/about"
+
+services_section:
+  subtitle: "Diensten"
+  title: "Ik kan u helpen met de volgende diensten"
+  button:
+    title: "All onze diensten"
+    url: "/services"
+
+portfolio_section:
+  subtitle: "Mijn Portfolio"
+  title: "Projecten die ik heb mogen uitvoeren"
+
+testimonials_section:
+  subtitle: Reviews
+  title: "Wat andere zeggen over mij"
+
+---
+
+<section class="[ hero ] [ full-width ] [ region ]">
+  <div class="hero__inner | flow">
+    <h3 class="section-subtitle">{{ hero_section.subtitle }}</h3>
+    <h1 class="section-title">{{ hero_section.title }}</h1>
+    <p>{{ hero_section.body |> md }}</p>
+  </div>
+</section>
+<article class="[ about ] [ full-width ] [ region ]">
+  <h3 class="section-subtitle">{{ about_section.subtitle }}</h3>
+  <div class="flex-group ai-center jc-between">
+    <h2 class="section-title">{{ about_section.title }}</h2>
+    <a href="{{ about_section.button.url }}" class="button animated">{{ about_section.button.title }} <ion-icon name="arrow-forward-outline"></ion-icon></a>
+  </div>
+  <hr />
+  <div class="grid-auto-fit" data-cols="two">
+    <div class="div">
+      <p>{{ about_section.body |> md }}</p>
+    </div>
+    <div>
+      <ul class="checkmarks flow" role="list">
+      {{ for item of about_section.list }}
+        <li><ion-icon name="checkbox"></ion-icon> {{ item.title }}</li>
+      {{ /for }}
+      </ul>
+    </div>
+  </div>
+</article>
+<section class="[ services ] [ full-width ] [ region ]">
+  <h3 class="section-subtitle">{{ services_section.subtitle }}</h3>
+  <div class="flex-group ai-center jc-between">
+    <h2 class="section-title">{{ services_section.title }}</h2>
+    <a href="{{ services_section.button.url }}" class="button animated">{{ services_section.button.title }} <ion-icon name="arrow-forward-outline"></ion-icon></a>
+  </div>
+  <hr />
+  <div class="grid-auto-fit" data-cols="three">
+  {{ set services = search.pages("type=service", "order=desc") }}
+  {{ for service of services }}
+    <a href="{{ service.url }}" class="service card">
+      <img src="{{ service.image }}" alt="{{ service.title }}">
+      <span class="flex ai-center">{{ service.title }} <ion-icon name="arrow-forward-circle-outline"></ion-icon></span>
+    </a>
+  {{ /for }}
+  </div>
+</section>
+{{ include "partials/sections/testimonials.vto" }}
+

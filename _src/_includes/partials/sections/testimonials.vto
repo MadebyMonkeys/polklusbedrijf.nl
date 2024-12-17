@@ -1,0 +1,26 @@
+<section class="[ testimonials ] [ full-width ] [ region bgcolor-secondary-50 ]">
+  <h3 class="section-subtitle">{{ testimonials_section.subtitle }}</h3>
+  <div class="grid-auto-fit" data-cols="three">
+    <div class="flow">
+      <h2 class="section-title">{{ testimonials_section.title }}</h2>
+      <div class="controls">
+          <button class="button animated carousel__button carousel__button--prev" data-toggle="prev" data-carousel-id="1" aria-label="next"><ion-icon size="large" name="arrow-back-outline" role="img" class="md icon-large hydrated"></ion-icon></button>
+          <button class="button animated carousel__button carousel__button--next" data-toggle="next" data-carousel-id="1" aria-label="previous"><ion-icon size="large" name="arrow-forward-outline" role="img" class="md icon-large hydrated"></ion-icon></button>
+      </div>
+    </div>
+    <div class="carousel" data-carousel-id="1">
+      <div class="carousel__track">
+        {{ for testimonial of testimonials }}
+        <div class="carousel__item">
+          <div class="testimonial">
+            <div class="testimonial__content">
+              <p>{{ testimonial.body}}</p>
+            </div>
+            <span class="testimonial__author">{{ testimonial.name }}</strong></cite>
+          </div>
+        </div>
+      {{ /for }}
+      </div>
+    </div>
+  </div>
+</section>

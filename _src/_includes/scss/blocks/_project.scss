@@ -1,0 +1,92 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// project
+// -----------------------------------------------------------------------------
+
+.project-list {
+
+    &__post {
+        position: relative;
+        display: flex;
+        flex-flow: row-wrap;
+        align-items: end;
+        padding: var(--space-m);
+        height: 100%;
+        border-radius: var(--space-s);
+        overflow: clip;
+        text-decoration: none;
+        aspect-ratio: 16/9;
+
+        &::after {
+            content: '';
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, transparent, var(--secondary-800));
+        }
+
+        &--image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+
+        &--info {
+            color: var(--neutral-50);
+            z-index: 2;
+            opacity: 1;
+            transition: opacity 300ms ease;
+        }
+
+        &--title {
+            color: var(--neutral-50);
+            max-width: unset;
+            letter-spacing: .03ch;
+        }
+
+        &--tags {
+            font-size: var(--fs-300);
+        }
+
+        // Hover status
+        &:hover {}
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// project
+// -----------------------------------------------------------------------------
+
+.project {
+    border-radius: var(--space-s);
+    border: 1px solid var(--neutral-50);
+    overflow: clip;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    
+    &:is(:hover) {
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    &__image {
+        margin: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+    }
+
+    .button {
+        --button-font-size: var(--fs-300);
+    }
+}

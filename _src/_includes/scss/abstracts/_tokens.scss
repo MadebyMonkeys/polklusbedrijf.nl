@@ -1,0 +1,120 @@
+@use "colors" as *;
+
+// -----------------------------------------------------------------------------
+// THEME
+// -----------------------------------------------------------------------------
+
+$active-theme: $light;
+$enable-media-prefers-dark-mode: false;
+
+$flex-group-gap: var(--space-s-l);
+
+$input-select-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(136, 145, 164)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+
+
+
+// -----------------------------------------------------------------------------
+// GLOBALS
+// -----------------------------------------------------------------------------
+
+$body-foreground: var(--neutral-500);
+$body-background: var(--background-color);
+$body-font-family: var(--ff-base);
+$body-font-size: var(--fs-400);
+$body-font-weight: var(--fw-regular);
+$body-line-height: 1.618;
+
+$heading-foreground: var(--secondary-850);
+$heading-font-family: var(--ff-base);
+$heading-font-size: inherit;
+$heading-font-weight: var(--fw-bold);
+$heading-line-height: 1.1;
+
+
+
+// -----------------------------------------------------------------------------
+// SITE HEADER
+// -----------------------------------------------------------------------------
+
+$site-header-background: transparent;
+$site-header-padding: var(--space-s);
+
+
+//
+// Hamburger
+//
+$hamburger-padding: var(--size-2xs);
+
+$hamburger-icon-foreground: var(--secondary-50);
+$hamburger-icon-width: 3ex;
+$hamburger-icon-stroke-width: 7px;
+$hamburger-icon-animation-timing: 600ms;
+
+
+
+// -----------------------------------------------------------------------------
+// SITE NAVIGATION
+// -----------------------------------------------------------------------------
+
+$site-nav-order: 3;
+
+$site-nav-list-gap: var(--space-3xs);
+
+$site-nav-link-color: var(--neutral-500);
+$site-nav-link-color-hover: var(--neutral-800);
+$site-nav-link-color-active: var(--neutral-50);
+
+$site-nav-link-background: transparent;
+$site-nav-link-background-hover: var(--secondary-50);
+$site-nav-link-background-active: var(--secondary-900);
+
+$site-nav-link-padding: var(--space-xs) var(--space-m);
+$site-nav-link-border-radius:var(--space-3xs);
+
+$site-nav-link-text-decoration: none;
+
+
+
+// -----------------------------------------------------------------------------
+// Page layout
+// -----------------------------------------------------------------------------
+
+$page-layout-padding-inline: clamp(1rem, 6dvw, 3rem);
+$page-layout-gap: 2em;
+$page-layout-popout-width: 1640px;
+$page-layout-content-width: 1350px;
+$page-layout-narrow-width: 1060px;
+
+
+$split-screen-content-width: $page-layout-content-width;
+$split-screen-content-padding: clamp(1em, 6dvw, 3em);
+$split-screen-padding-block: 3.3vmax;
+$split-screen-padding-inline: $page-layout-padding-inline;
+
+
+
+// -----------------------------------------------------------------------------
+// BUTTONS
+// -----------------------------------------------------------------------------
+
+$button-foreground: var(--neutral-50);
+$button-foreground-hover: var(--neutral-50);
+$button-foreground-active: var(--neutral-50);
+
+$button-background: var(--primary-400);
+$button-background-hover: var(--secondary-800);
+$button-background-active: var(--secondary-850);
+
+$button-font-size: var(--fs-400);
+$button-font-weight: var(--fw-semibold);
+
+$button-text-transform: auto;
+$button-letter-spacing: auto;
+
+$button-padding: var(--space-xs) var(--space-s);
+$button-gap: var(--space-3xs);
+
+$button-border-width: 3px;
+$button-border-style: solid;
+$button-border-color: var(--_button-background);
+$button-border-radius: var(--space-2xs) var(--space-2xs) var(--space-2xs) 0;

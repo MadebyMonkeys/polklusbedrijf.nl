@@ -1,0 +1,46 @@
+---
+layout: layouts/page.vto
+hasCarousel: true
+---
+
+<article class="[] [ full-width ] [ region ]">
+    <div class="grid-auto-fit" data-cols="two">
+        <div class="flow">
+            <h3 class="section-subtitle">Project details</h3>
+            <h1 class="section-title">{{ title }}</h1>
+            <div class="tags">
+                {{ tags |> join(', ') }}
+            </div>
+            {{- content -}}
+        </div>
+        <div class="flow">
+            <div class="carousel" data-carousel-id="1">
+                <div class="carousel__track">
+                    {{ for image of images }}
+                        <div class="carousel__item">
+                            <a href="{{ image.url }}" class="lightbox">
+                                <img class="rounded-image" src="{{ image.url }}" alt="{{ image.title }}">
+                            </a>
+                        </div>
+                    {{ /for }}
+                </div>
+            </div>
+            <div class="controls">
+                <button class="button animated carousel__button carousel__button--prev" data-toggle="prev" data-carousel-id="1" aria-label="next"><ion-icon size="large" name="arrow-back-outline" role="img" class="md icon-large hydrated"></ion-icon></button>
+                <button class="button animated carousel__button carousel__button--next" data-toggle="next" data-carousel-id="1" aria-label="previous"><ion-icon size="large" name="arrow-forward-outline" role="img" class="md icon-large hydrated"></ion-icon></button>
+            </div>
+        </div>
+    </div>
+</article>
+
+<section class="[ related-posts ] [ ] [ region flow ]">
+{{ set projects = search.pages("url!='" + url + "' type=" + type) |> getRelatedPosts(tags) }}
+{{ if projects }}
+    {{ if projects.length }}
+        <h3 class="">Gerelateerde projecten</h3>
+        <div class="project-list grid-auto-fit" data-cols="two">
+            {{ include "projects-list.vto" { projects } }}
+        </div>
+    {{ /if }}
+{{ /if }}
+</section>
