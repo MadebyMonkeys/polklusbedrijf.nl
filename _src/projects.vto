@@ -19,8 +19,8 @@ projects_section:
 ---
 
 <section class="[ projecten ] [ full-width ] [ region ]">
-    <h3 class="section-subtitle">Projecten</h3>
-    <h1 class="section-title">{{ projects_section.title }}</h1>
+    <h1 class="section-subtitle">Projecten</h1>
+    <h2 class="section-title h1">{{ projects_section.title }}</h2>
     {{ set projects = search.pages("type=project", "order=desc") }}
     <div class="grid-auto-fit" data-cols="two">
         {{ include "projects-list.vto" { projects } }}

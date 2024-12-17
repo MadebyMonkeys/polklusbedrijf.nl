@@ -51,9 +51,9 @@ testimonials_section:
 
 <section class="[ hero ] [ full-width ] [ region ]">
   <div class="hero__inner | flow">
-    <h3 class="section-subtitle">{{ hero_section.subtitle }}</h3>
-    <h1 class="section-title">{{ hero_section.title }}</h1>
-    <p>{{ hero_section.body |> md }}</p>
+    <h1 class="section-subtitle">{{ hero_section.subtitle }}</h1>
+    <h2 class="section-title h1">{{ hero_section.title }}</h2>
+    <p>{{ hero_section.body }}</p>
   </div>
 </section>
 <article class="[ about ] [ full-width ] [ region ]">
@@ -77,9 +77,9 @@ testimonials_section:
   </div>
 </article>
 <section class="[ services ] [ full-width ] [ region ]">
-  <h3 class="section-subtitle">{{ services_section.subtitle }}</h3>
+  <h2 class="section-subtitle">{{ services_section.subtitle }}</h2>
   <div class="flex-group ai-center jc-between">
-    <h2 class="section-title">{{ services_section.title }}</h2>
+    <h3 class="section-title h2">{{ services_section.title }}</h3>
     <a href="{{ services_section.button.url }}" class="button animated">{{ services_section.button.title }} <ion-icon name="arrow-forward-outline"></ion-icon></a>
   </div>
   <hr />
