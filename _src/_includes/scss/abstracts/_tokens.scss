@@ -97,9 +97,9 @@ $split-screen-padding-inline: $page-layout-padding-inline;
 // BUTTONS
 // -----------------------------------------------------------------------------
 
-$button-foreground: var(--neutral-50);
-$button-foreground-hover: var(--neutral-50);
-$button-foreground-active: var(--neutral-50);
+$button-foreground: white;
+$button-foreground-hover: white;
+$button-foreground-active: white;
 
 $button-background: var(--primary-400);
 $button-background-hover: var(--secondary-800);
