@@ -1,17 +1,17 @@
 .grid-auto-fit {
     display: grid;
-    grid-template-columns: repeat(var(--grid-placement, auto-fit), minmax(var(--grid-min-col-size, 16rem), 1fr));
+    grid-template-columns: repeat(var(--grid-placement, auto-fit), minmax(var(--grid-min-col-size, 16em), 1fr));
     gap: var(--grid-gap, var(--space-s-l));
 }
 
 
 .grid-auto-fit {
     &[data-cols="two"] {
-        --grid-min-col-size: clamp(16rem, 50vw, 26rem);
+        --grid-min-col-size: clamp(16em, 50vw, 26em);
     }
 
     &[data-cols="three"] {
-        --grid-min-col-size: clamp(16rem, 33%, 20rem);
+        --grid-min-col-size: clamp(16em, 33%, 20em);
     }
 
     &[data-rows="masonry"] {

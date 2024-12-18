@@ -23,5 +23,7 @@ projects_section:
     <h2 class="section-title h1">{{ projects_section.title }}</h2>
     <hr>
     {{ set projects = search.pages("type=project", "order=desc") }}
-    {{ include "projects-list.vto" { projects } }}
+    <div class="grid-auto-fit" data-cols="two">
+      {{ include "projects-list.vto" { projects } }}
+    </div>
 </section>

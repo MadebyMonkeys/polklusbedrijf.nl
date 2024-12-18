@@ -1,5 +1,6 @@
 ---
 layout: layouts/page.vto
+templateEngine: "vto, md"
 
 title: Homepage
 description: Homepage beschrijving
@@ -53,7 +54,7 @@ testimonials_section:
   <div class="hero__inner | flow">
     <h1 class="section-subtitle">{{ hero_section.subtitle }}</h1>
     <h2 class="section-title h1">{{ hero_section.title }}</h2>
-    <p>{{ hero_section.body }}</p>
+    {{ hero_section.body |> md }}
   </div>
 </section>
 <article class="[ about ] [ full-width ] [ region ]">
@@ -64,8 +65,8 @@ testimonials_section:
   </div>
   <hr />
   <div class="grid-auto-fit" data-cols="two">
-    <div class="div">
-      <p>{{ about_section.body |> md }}</p>
+    <div class="content flow">
+      {{ about_section.body |> md }}
     </div>
     <div>
       <ul class="checkmarks flow" role="list">

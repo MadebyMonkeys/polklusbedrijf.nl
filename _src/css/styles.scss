@@ -96,8 +96,6 @@ hr {
     }
 }
 
-
-
 // -----------------------------------------------------------------------------
 // Compositions
 // -----------------------------------------------------------------------------
@@ -128,7 +126,7 @@ hr {
     --region-space: 12.12vmax;
 }
 
-.av.narrow {
+.algemene-voorwaarden.narrow {
     margin-inline: auto;
 }
 
@@ -322,7 +320,6 @@ hr {
 
 
 .projecten .grid-auto-fit {
-    --grid-min-col-size: clamp(16rem, 50vw, 26rem);
     margin-top: var(--space-s-l);
 }
 
