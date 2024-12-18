@@ -21,8 +21,7 @@ projects_section:
 <section class="[ projecten ] [ full-width ] [ region ]">
     <h1 class="section-subtitle">Projecten</h1>
     <h2 class="section-title h1">{{ projects_section.title }}</h2>
+    <hr>
     {{ set projects = search.pages("type=project", "order=desc") }}
-    <div class="grid-auto-fit" data-cols="two">
-        {{ include "projects-list.vto" { projects } }}
-    </div>
+    {{ include "projects-list.vto" { projects } }}
 </section>

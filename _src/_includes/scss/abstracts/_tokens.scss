@@ -37,7 +37,7 @@ $heading-line-height: 1.1;
 // -----------------------------------------------------------------------------
 
 $site-header-background: transparent;
-$site-header-padding: var(--space-s);
+$site-header-padding: var(--space-s) 0;
 
 
 //
@@ -57,6 +57,9 @@ $hamburger-icon-animation-timing: 600ms;
 // -----------------------------------------------------------------------------
 
 $site-nav-order: 3;
+
+$site-nav-link-font-size: var(--fs-400);
+$site-nav-link-text-transform: normal;
 
 $site-nav-list-gap: var(--space-3xs);
 

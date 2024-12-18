@@ -87,7 +87,7 @@ testimonials_section:
   {{ set services = search.pages("type=service", "order=desc") }}
   {{ for service of services }}
     <a href="{{ service.url }}" class="service card">
-      <img src="{{ service.image }}" alt="{{ service.title }}">
+      <img src="{{ service.image }}" alt="">
       <span class="flex ai-center">{{ service.title }} <ion-icon name="arrow-forward-circle-outline"></ion-icon></span>
     </a>
   {{ /for }}
