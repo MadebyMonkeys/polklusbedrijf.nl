@@ -13,6 +13,7 @@ html {
     text-size-adjust: none;
     hanging-punctuation: first last;
     scroll-behavior: smooth;
+    interpolate-size: allow-keywords;
 
     @media (prefers-reduce-motion: no-preference) {}
 }
