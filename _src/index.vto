@@ -21,6 +21,13 @@ hero_section:
   title: "Bouwt uw droom tot werkelijkheid"
   body: "Geen huis is het zelfde, elke smaak is anders en soms dienen projecten geheel op maat te worden uitgewerkt. Pol Klusbedrijf staat voor u klaar, is flexibel en stelt uw tevredenheid hoog in het vaandel."
 
+project_section:
+  subtitle: "Projecten"
+  title: "Projecten welke ik heb mogen doen"
+  button:
+    title: Alle projecten
+    url: "/projects"
+
 about_section:
   subtitle: "Over mij"
   title: "Uw betrouwbare partner in bouwvakmanschap."
@@ -57,9 +64,21 @@ testimonials_section:
     {{ hero_section.body |> md }}
   </div>
 </section>
+<section class="[ projecten ] [ full-width ] [ region bgcolor-secondary-50 ]">
+  <h3 class="section-subtitle">{{ project_section.subtitle }}</h3>
+  <div class="flex-group ai--center jc--between">
+    <h2 class="section-title">{{ project_section.title }}</h2>
+    <a href="{{ project_section.button.url }}" class="button animated">{{ project_section.button.title }} <ion-icon name="arrow-forward-outline"></ion-icon></a>
+  </div>
+  <hr>
+  {{ set projects = search.pages("type=project", "order=desc").slice(0, 3) }}
+  <div class="grid-auto-fit" data-cols="three">
+    {{ include "projects-list.vto" { projects } }}
+  </div>
+</section>
 <article class="[ about ] [ full-width ] [ region ]">
   <h3 class="section-subtitle">{{ about_section.subtitle }}</h3>
-  <div class="flex-group ai-center jc-between">
+  <div class="flex-group ai--center jc--between">
     <h2 class="section-title">{{ about_section.title }}</h2>
     <a href="{{ about_section.button.url }}" class="button animated">{{ about_section.button.title }} <ion-icon name="arrow-forward-outline"></ion-icon></a>
   </div>
@@ -79,17 +98,17 @@ testimonials_section:
 </article>
 <section class="[ services ] [ full-width ] [ region ]">
   <h2 class="section-subtitle">{{ services_section.subtitle }}</h2>
-  <div class="flex-group ai-center jc-between">
+  <div class="flex-group ai--center jc--between">
     <h3 class="section-title h2">{{ services_section.title }}</h3>
     <a href="{{ services_section.button.url }}" class="button animated">{{ services_section.button.title }} <ion-icon name="arrow-forward-outline"></ion-icon></a>
   </div>
   <hr />
   <div class="grid-auto-fit" data-cols="three">
-  {{ set services = search.pages("type=service", "order=desc") }}
+  {{ set services = search.pages("type=service", "order=desc").slice(0, 6) }}
   {{ for service of services }}
     <a href="{{ service.url }}" class="service card">
       <img src="{{ service.image }}" alt="">
-      <span class="flex ai-center">{{ service.title }} <ion-icon name="arrow-forward-circle-outline"></ion-icon></span>
+      <span class="flex ai--center">{{ service.title }} <ion-icon name="arrow-forward-circle-outline"></ion-icon></span>
     </a>
   {{ /for }}
   </div>

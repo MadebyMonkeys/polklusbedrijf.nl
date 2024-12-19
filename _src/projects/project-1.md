@@ -2,6 +2,7 @@
 title: "Project #1"
 description: Korte project beschrijving
 image: "/img/project-1/project-resultaat.webp"
+year: 2023
 
 metas:
   title: =title
@@ -25,6 +26,4 @@ tags:
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, dolores
 ex quam tenetur hic iste minus quaerat, eius numquam quibusdam harum! Eos quos
 laudantium commodi at, est aperiam reprehenderit iusto nam porro asperiores,
-modi culpa! Consectetur velit eveniet reprehenderit, magnam quod harum quaerat
-quam consequatur, veniam incidunt totam porro vel optio atque nostrum voluptatum
-nihil ipsam.
+modi culpa!
