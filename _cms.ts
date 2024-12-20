@@ -87,7 +87,7 @@ cms.document({
       ],
     },
     {
-      name: "portfolio_section",
+      name: "project_section",
       label: "Project Sectie",
       type: "object",
       fields: [
