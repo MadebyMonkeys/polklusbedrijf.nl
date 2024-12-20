@@ -109,6 +109,13 @@ hr {
     }
 }
 
+.site-nav {
+    .button[data-ghost-button] {
+        --button-foreground: var(--secondary-950);
+        font-size: var(--fs-300);
+    }
+}
+
 
 .hero {
     --region-space: 6.6vmax;
