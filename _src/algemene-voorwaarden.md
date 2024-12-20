@@ -12,9 +12,9 @@ metas:
 
 **Definities** In deze algemene voorwaarden wordt verstaan onder,
 
-**Opdrachtnemer**: De partij die de opdracht uitvoert. {{ site.company.name }}
-{{ site.address.street }} {{ site.address.zipcode }} {{ site.address.city }}
-Kvk: {{ site.kvk }}
+**Opdrachtnemer**: De partij die de opdracht uitvoert. {{ site.name }} {{
+site.address.street }} {{ site.address.zipcode }} {{ site.address.city }} Kvk:
+{{ site.kvk }}
 
 **Opdrachtgever**: De wederpartij (bedrijf of particulier) die de opdracht
 geeft.

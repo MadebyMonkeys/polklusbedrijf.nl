@@ -1,8 +1,10 @@
 ---
 title: Onderhoud
-image: "/img/services/onderhoud.webp"
+image: /img/diensten/onderhoud.webp
+metas:
+  title: =title
+  description: =description
 ---
-
 Het onderhouden van uw bezittingen is een vereiste, ook zo voor uw huis. Alle
 materialen hebben een vorm van onderhoud nodig en dat weet Pol Klusbedrijf als
 de beste. De staat van uw huis wordt grondig gecontroleerd zodat er gericht

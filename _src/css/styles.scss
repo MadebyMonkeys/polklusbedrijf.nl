@@ -42,14 +42,6 @@ hr {
     margin-top: 0;
 }
 
-.ai-center {
-    align-items: center;
-}
-
-.jc-between {
-    justify-content: space-between;
-}
-
 .rounded-image {
     border-radius: var(--space-s) var(--space-s) var(--space-s) 0;
 }
@@ -119,7 +111,7 @@ hr {
 
 
 .hero {
-    --region-space: 12.12vmax;
+    --region-space: 6.6vmax;
 }
 
 
@@ -127,7 +119,7 @@ hr {
     position: relative;
 
     .checkmarks {
-        --flow-space: var(--space-2xs);
+        --flow-space: var(--space-3xs);
 
         li {
             display: inline-flex;
@@ -154,13 +146,6 @@ hr {
         overflow: clip;
         border-radius: var(--space-s) var(--space-s) var(--space-s) 0;
 
-        &:is(:hover, :focus-visible) {
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-
-            img {
-                scale: 1.1;
-            }
-        }
 
         img {
             scale: 1;
@@ -188,10 +173,19 @@ hr {
             }
         }
 
-        &:is(:hover, :focus-visible) span {
-            color: var(--secondary-950);
-            background: var(--primary-400);
-            font-weight: var(--fw-medium);
+
+        &:is(:hover, :focus-visible) {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+            img {
+                scale: 1.1;
+            }
+
+            span {
+                color: var(--secondary-950);
+                background: var(--primary-400);
+                font-weight: var(--fw-medium);
+            }
         }
     }
 }
@@ -266,26 +260,6 @@ hr {
 
 
 
-
-.button {
-    letter-spacing: .15ch;
-
-    &.animated {
-        ion-icon {
-            rotate: -45deg;
-            transition: rotate 300ms ease-in-out;
-        }
-    
-        &:is(:hover) {
-            ion-icon {
-                rotate: 0deg;
-            }
-        }
-    }
-}
-
-
-
 .socials {
     .link {
         margin-right: var(--space-s-l);
@@ -302,20 +276,6 @@ hr {
         }
     }
 }
-
-.site-nav {
-    .button[data-ghost-button] {
-        --button-foreground: var(--secondary-950);
-        font-size: var(--fs-300);
-    }
-}
-
-
-.widget {
-    background: var(--secondary-50);
-    padding: var(--space-s-l);
-}
-
 
 .projecten .grid-auto-fit {
     margin-top: var(--space-s-l);

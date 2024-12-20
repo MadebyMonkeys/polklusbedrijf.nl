@@ -1,7 +1,7 @@
 ---
-title: "Project #2"
+title: "Project #3"
 description: Korte project beschrijving
-image: "/img/project-2/project-resultaat.webp"
+image: "/img/project-3/project-resultaat.webp"
 year: 2023
 
 metas:
@@ -9,14 +9,12 @@ metas:
   description: =description
 
 images:
-  - title: "Image 1"
-    url: "/img/project-2/project-resultaat.webp"
-
-  - title: "Image 2"
-    url: "/img/project-2/project-resultaat.webp"
-
-  - title: "Image 3"
-    url: "/img/project-2/project-resultaat.webp"
+  - alt: "Title #1"
+    path: "/img/project-3/project-resultaat.webp"
+  - alt: "Title #2"
+    path: "/img/project-3/project-resultaat.webp"
+  - alt: "Title #2"
+    path: "/img/project-3/project-resultaat.webp"
 
 tags:
   - Schilderwerk

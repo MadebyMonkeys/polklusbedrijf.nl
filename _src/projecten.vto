@@ -1,29 +1,26 @@
 ---
 layout: layouts/page.vto
-
 menu:
   visible: true
   title: Projecten
-  url: "/projects"
+  url: /projecten
   order: 4
-
 title: Projecten
 description: Some cool description
-
 metas:
-  title: Projecten
+  title: =title
   description: =description
-
 projects_section:
+  subtitle: Projecten
   title: Projecten welke ik heb mogen doen
+projecten_section: {}
 ---
-
 <section class="[ projecten ] [ full-width ] [ region ]">
-    <h1 class="section-subtitle">Projecten</h1>
+    <h1 class="section-subtitle">{{ projects_section.subtitle }}</h1>
     <h2 class="section-title h1">{{ projects_section.title }}</h2>
     <hr>
-    {{ set projects = search.pages("type=project", "order=desc") }}
+    {{ set projecten = search.pages("type=project", "order=desc") }}
     <div class="grid-auto-fit" data-cols="two">
-      {{ include "projects-list.vto" { projects } }}
+      {{ include "projects-list.vto" { projecten } }}
     </div>
 </section>

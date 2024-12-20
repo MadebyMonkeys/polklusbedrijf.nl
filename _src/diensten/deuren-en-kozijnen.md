@@ -1,8 +1,10 @@
 ---
 title: Deuren en Kozijnen
-image: "/img/services/deuren-en-kozijnen.webp"
+image: /img/diensten/deuren-en-kozijnen.webp
+metas:
+  title: =title
+  description: =description
 ---
-
 Wilt u uw (binnen)deuren vervangen of zijn uw kozijnen aan reparatie of
 vervanging toe? Dan ben ik de aangewezen persoon om een beroep op te doen. Niet
 alleen kan ik al uw kozijnen vervangen, ook kan ik bestaande kozijnen een

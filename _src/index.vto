@@ -1,64 +1,63 @@
 ---
 layout: layouts/page.vto
-templateEngine: "vto, md"
-
+templateEngine: 'vto, md'
 title: Homepage
 description: Homepage beschrijving
-
 metas:
   description: =description
-
+  title: =title
 menu:
   visible: true
   title: Home
-  url: "/"
+  url: /
   order: 1
-
 hasCarousel: true
-
 hero_section:
-  subtitle: "Welkom bij Pol klusbedrijf"
-  title: "Bouwt uw droom tot werkelijkheid"
-  body: "Geen huis is het zelfde, elke smaak is anders en soms dienen projecten geheel op maat te worden uitgewerkt. Pol Klusbedrijf staat voor u klaar, is flexibel en stelt uw tevredenheid hoog in het vaandel."
-
+  subtitle: Welkom bij Pol klusbedrijf
+  title: Bouwt uw droom tot werkelijkheid
+  body: >-
+    Geen huis is het zelfde, elke smaak is anders en soms dienen projecten
+    geheel op maat te worden uitgewerkt. Pol Klusbedrijf staat voor u klaar, is
+    flexibel en stelt uw tevredenheid hoog in het vaandel.
+  image: /img/about-img.webp
 project_section:
-  subtitle: "Projecten"
-  title: "Projecten welke ik heb mogen doen"
+  subtitle: Projecten
+  title: Projecten welke ik heb mogen doen
   button:
     title: Alle projecten
-    url: "/projects"
-
+    url: /projects
 about_section:
-  subtitle: "Over mij"
-  title: "Uw betrouwbare partner in bouwvakmanschap."
-  body: "Door zijn ruime kennis en ervaring is Ricardo Pol de aangewezen vakman om al uw klussen in en om uw huis aan toe te vertrouwen. Meedenkend, transparant, eerlijkheid en openheid is waar hij voor staat."
+  subtitle: Over mij
+  title: Uw betrouwbare partner in bouwvakmanschap.
+  body: >-
+    Door zijn ruime kennis en ervaring is Ricardo Pol de aangewezen vakman om al
+    uw klussen in en om uw huis aan toe te vertrouwen. Meedenkend, transparant,
+    eerlijkheid en openheid is waar hij voor staat.
   list:
-    - title: "Ongeëvenaarde expertise met tientallen jaren ervaring"
-    - title: "Toewijding aan kwaliteit en precisie"
-    - title: "Duurzame en verantwoorde bouwpraktijken"
+    - title: Ongeëvenaarde expertise met tientallen jaren ervaring
+    - title: Toewijding aan kwaliteit en precisie
+    - title: Duurzame en verantwoorde bouwpraktijken
   button:
     title: Over mij
-    url: "/about"
-
+    url: /about
 services_section:
-  subtitle: "Diensten"
-  title: "Ik kan u helpen met de volgende diensten"
+  subtitle: Diensten
+  title: Ik kan u helpen met de volgende diensten
   button:
-    title: "All onze diensten"
-    url: "/services"
-
+    title: All onze diensten
+    url: /services
 portfolio_section:
-  subtitle: "Mijn Portfolio"
-  title: "Projecten die ik heb mogen uitvoeren"
-
+  subtitle: Mijn Portfolio
+  title: Projecten die ik heb mogen uitvoeren
+  button:
+    title: Alle projecten
+    url: /projecten
 testimonials_section:
   subtitle: Reviews
-  title: "Wat andere zeggen over mij"
-
+  title: Wat andere zeggen over mij
 ---
-
 <section class="[ hero ] [ full-width ] [ region ]">
-  <div class="hero__inner | flow">
+  <div class="hero__inner">
     <h1 class="section-subtitle">{{ hero_section.subtitle }}</h1>
     <h2 class="section-title h1">{{ hero_section.title }}</h2>
     {{ hero_section.body |> md }}
@@ -71,9 +70,9 @@ testimonials_section:
     <a href="{{ project_section.button.url }}" class="button animated">{{ project_section.button.title }} <ion-icon name="arrow-forward-outline"></ion-icon></a>
   </div>
   <hr>
-  {{ set projects = search.pages("type=project", "order=desc").slice(0, 3) }}
-  <div class="grid-auto-fit" data-cols="three">
-    {{ include "projects-list.vto" { projects } }}
+  {{ set projecten = search.pages("type=project", "order=desc").slice(0, 3) }}
+  <div class="grid-auto-fit" data-cols="two">
+    {{ include "projects-list.vto" { projecten } }}
   </div>
 </section>
 <article class="[ about ] [ full-width ] [ region ]">
@@ -114,4 +113,3 @@ testimonials_section:
   </div>
 </section>
 {{ include "partials/sections/testimonials.vto" }}
-

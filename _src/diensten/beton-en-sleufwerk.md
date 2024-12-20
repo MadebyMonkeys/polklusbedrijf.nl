@@ -1,8 +1,10 @@
 ---
 title: Beton en Sleufwerk
-image: "/img/services/beton-en-sleufwerk.webp"
+image: /img/diensten/beton-en-sleufwerk.webp
+metas:
+  title: =title
+  description: =description
 ---
-
 Ook voor het maken van een cementdekvloer of bij het (ver)leggen van
 bijvoorbeeld stroom of andere leidingen t.b.v. een nieuwe keuken of badkamer kan
 Pol Klusbedrijf u van dienst zijn. Na jaren lange ervaring op de bouw als frezer

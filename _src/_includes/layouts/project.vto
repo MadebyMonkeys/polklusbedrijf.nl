@@ -27,8 +27,8 @@ hasLightbox: true
     <div class="grid-auto-fit" data-cols="three" data-rows="masonry">
     {{ for image of images }}
         <div class="carousel__item">
-            <a href="{{ image.url }}" class="lightbox">
-                <img class="rounded-image" src="{{ image.url }}" alt="{{ image.title }}">
+            <a href="{{ image.path }}" class="lightbox">
+                <img class="rounded-image" src="{{ image.path }}" alt="{{ image.alt }}">
             </a>
         </div>
     {{ /for }}
@@ -36,12 +36,12 @@ hasLightbox: true
 </div>
 
 <section class="[ related-posts ] [ ] [ region flow ]">
-{{ set projects = search.pages("url!='" + url + "' type=" + type) |> getRelatedPosts(tags) }}
-{{ if projects }}
-    {{ if projects.length }}
+{{ set projecten = search.pages("url!='" + url + "' type=" + type) |> getRelatedPosts(tags) }}
+{{ if projecten }}
+    {{ if projecten.length }}
         <h3 class="">Gerelateerde projecten</h3>
         <div class="project-list grid-auto-fit" data-cols="two">
-            {{ include "projects-list.vto" { projects } }}
+            {{ include "projects-list.vto" { projecten } }}
         </div>
     {{ /if }}
 {{ /if }}

@@ -66,3 +66,22 @@
         }
     }
 }
+
+
+
+.button {
+    letter-spacing: .15ch;
+
+    &.animated {
+        ion-icon {
+            rotate: -45deg;
+            transition: rotate 300ms ease-in-out;
+        }
+    
+        &:is(:hover) {
+            ion-icon {
+                rotate: 0deg;
+            }
+        }
+    }
+}

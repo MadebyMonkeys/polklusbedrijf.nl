@@ -1,13 +1,15 @@
 ---
 title: Schilder werk
-image: "/img/services/schilderwerk.webp"
+image: /img/diensten/schilderwerk.webp
+metas:
+  title: =title
+  description: =description
 ---
-
 Schilderwerk, in de breedste zin van het woord. Denk aan het schilderen van
 buitengevels, muren, deuren, kozijnen, meubels, trappen, balustrades en nog veel
 meer.
 
-## Schilderwerk Binnenshuis
+### Schilderwerk Binnenshuis
 
 Net verhuisd of toe aan verandering.. Er zijn ontelbare redenen waarom u de
 binnenkant van uw woning of kantoor/bedrijf zou willen aanpakken. Kantoren en
@@ -15,7 +17,7 @@ bedrijven veranderen wel eens van imago, willen een ander thema aangaan of is de
 ruimte gewoon toe aan modernisering. Bij woonhuizen gebeurt het vaak dat men toe
 is aan vernieuwing, een andere inrichting of frissere kleuren.
 
-## Schilderwerk Buitenshuis
+### Schilderwerk Buitenshuis
 
 Uw huis wordt dag in dag uit blootgesteld aan verschillende weersomstandigheden.
 Zo heeft de felle zon haar effect op het schilderwerk maar ook de wind, regen,
