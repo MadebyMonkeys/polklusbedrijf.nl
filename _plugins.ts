@@ -10,6 +10,8 @@ import transform_images from "lume/plugins/transform_images.ts";
 export default function () {
   return (site: Site) => {
     site
+      .copy("js")
+      .copy("static", ".")
       .filter(
         "getRelatedPosts",
         (postsList, tags) =>
@@ -20,14 +22,12 @@ export default function () {
           }),
       )
       .use(date())
-      .use(esbuild())
+      .use(esbuild({ target: "es6" }))
       .use(inline())
       .use(metas())
       .use(robots())
       .use(sass())
       .use(svgo())
-      .use(transform_images())
-      .copy("js")
-      .copy("static", ".");
+      .use(transform_images());
   };
 }
