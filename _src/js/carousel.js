@@ -74,10 +74,16 @@ document.addEventListener("DOMContentLoaded", function () {
       { passive: true },
     );
 
-    carousel.addEventListener("touchmove", (event) => {
-      endX = event.touches[0].clientX;
-    });
+    // Use passive listener for touchmove
+    carousel.addEventListener(
+      "touchmove",
+      (event) => {
+        endX = event.touches[0].clientX;
+      },
+      { passive: true },
+    );
 
+    // Handle touchend without passive option
     carousel.addEventListener("touchend", () => {
       const threshold = 50; // Minimum swipe distance
       const diffX = endX - startX;
