@@ -55,12 +55,6 @@ cms.document({
       value: "layouts/page.vto",
     },
     {
-      name: "templateEngine",
-      label: "Template engine",
-      type: "hidden",
-      value: "[vto,md]",
-    },
-    {
       name: "hasCarousel",
       label: "has Carousel",
       type: "checkbox",

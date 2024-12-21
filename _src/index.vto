@@ -1,6 +1,5 @@
 ---
 layout: layouts/page.vto
-templateEngine: 'vto, md'
 title: Homepage
 description: Homepage beschrijving
 metas:
@@ -54,7 +53,7 @@ testimonials_section:
   <div class="hero__inner">
     <h1 class="section-subtitle">{{ hero_section.subtitle }}</h1>
     <h2 class="section-title h1">{{ hero_section.title }}</h2>
-    {{ hero_section.body |> md }}
+    <p>{{ hero_section.body}}</p>
   </div>
 </section>
 <section class="[ projecten ] [ full-width ] [ region bgcolor-secondary-50 ]">
@@ -78,7 +77,7 @@ testimonials_section:
   <hr />
   <div class="grid-auto-fit" data-cols="two">
     <div class="content flow">
-      {{ about_section.body |> md }}
+      <p>{{ about_section.body }}</p>
     </div>
     <div>
       <ul class="checkmarks flow" role="list">
