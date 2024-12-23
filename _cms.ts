@@ -1,8 +1,19 @@
 import lumeCMS from "lume/cms/mod.ts";
 
-const cms = lumeCMS();
+const cms = lumeCMS({
+  auth: {
+    method: "basic",
+    users: {
+      admin: "password",
+      client: "password2",
+    },
+  },
+});
 
-cms.upload("images", "src:img");
+cms.upload(
+  "images: Here you can manage all images",
+  "src:img",
+);
 
 // Define the testimonials collection
 cms.document({
