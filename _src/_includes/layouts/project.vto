@@ -27,7 +27,7 @@ hasLightbox: true
     <div class="grid-auto-fit" data-cols="three" data-rows="masonry">
     {{ for image of images }}
         <div class="carousel__item">
-            <a href="{{ image.path }}" class="lightbox">
+            <a data-fslightbox="gallery" href="{{ image.path }}">
                 <img class="rounded-image" src="{{ image.path }}" alt="{{ image.alt }}">
             </a>
         </div>
