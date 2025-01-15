@@ -3,7 +3,7 @@ layout: layouts/page.vto
 hasLightbox: true
 ---
 
-<article class="[ project ] [ full-width ] [ region ]">
+<article class="[ project ] [ full-width ] [ region flow ]">
     <div class="grid-auto-fit" data-cols="two">
         <div class="flow">
             <h3 class="section-subtitle">Project details</h3>
@@ -22,24 +22,24 @@ hasLightbox: true
             {{- content -}}
         </div>
     </div>
-</article>
-<div class="gallery">
-    <div class="grid-auto-fit" data-cols="three" data-rows="masonry">
-    {{ for image of images }}
-        <div class="carousel__item">
-            <a data-fslightbox="gallery" href="{{ image.path }}">
-                <img class="rounded-image" src="{{ image.path }}" alt="{{ image.alt }}">
+    <div class="gallery">
+        <div class="grid-auto-fit" data-cols="three" data-rows="masonry">
+        {{ for image of images }}
+            <a class="gallery__item" data-fslightbox="gallery" href="{{ image.path }}">
+                <img class="gallery__image image--rounded" src="{{ image.path }}" alt="{{ image.alt }}">
             </a>
+        {{ /for }}
         </div>
-    {{ /for }}
     </div>
-</div>
+</article>
 
 <section class="[ related-posts ] [ ] [ region flow ]">
 {{ set projecten = search.pages("url!='" + url + "' type=" + type) |> getRelatedPosts(tags) }}
 {{ if projecten }}
     {{ if projecten.length }}
-        <h3 class="">Gerelateerde projecten</h3>
+        <h3 class="section-subtitle">Gerelateerde projecten</h3>
+        <h2 class="section-title">Bekijk ook mijn andere projecten</h2>
+        <hr>
         <div class="project-list grid-auto-fit" data-cols="two">
             {{ include "projects-list.vto" { projecten } }}
         </div>

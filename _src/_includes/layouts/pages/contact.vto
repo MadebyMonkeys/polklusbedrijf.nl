@@ -1,24 +1,5 @@
 ---
 layout: layouts/page.vto
-
-title: Contact
-description: Some contact description
-
-metas:
-  title: =title
-  description: =description
-
-menu:
-  visible: true
-  title: Contact
-  url: "/contact"
-  order: 5
-
-contact_section:
-  subtitle: Contact
-  title: Kom in contact
-  body: "Mocht u verder nog vragen hebben stel deze dan gerust! Wij zullen deze zo spoedig mogelijk beantwoorden."
-
 ---
 
 <section class="[ contact ] [ full-width ] [ region ]">
@@ -29,8 +10,8 @@ contact_section:
             <p>{{ contact_section.body }}</p>
             <ul class="company-info flow" role="list">
                 <!-- <li><ion-icon name="pin"></ion-icon> {{ site.address.street }} <br> {{ site.address.zipcode }} {{ site.address.city }}</li> -->
-                <li class="flex-group ai--center"><ion-icon name="call"></ion-icon> <a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a></li>
-                <li class="flex-group ai--center"><ion-icon name="mail"></ion-icon> {{ site.contact.email }}</li>
+                <li class="flex-group ai--center"><ion-icon name="call"></ion-icon> <a href="tel:{{ site.company.contact.phone }}">{{ site.company.contact.phone }}</a></li>
+                <li class="flex-group ai--center"><ion-icon name="mail"></ion-icon> {{ site.company.contact.email }}</li>
                 <li class="socials flow">
                     <h3>Onze socials</h3>
                     <div class="social-links">
@@ -71,4 +52,3 @@ contact_section:
         </form>
     </div>
 </section>
-

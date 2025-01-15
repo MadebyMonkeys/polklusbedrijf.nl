@@ -1,10 +1,19 @@
-name: Pol klusbedrijf
-logo: /img/pkb-logo.svg
-kvk: 69661448
+company:
+  name: Pol klusbedrijf
+  logo: /img/pkb-logo.svg
+  kvk: 69661448
 
-contact:
-  phone: 06 130 377 65
-  email: info@polklusbedrijf.nl
+  address:
+    street: Händelstraat 17
+    zipcode: 5144 GV
+    city: Waalwijk
+
+  contact:
+    phone: 06 130 377 65
+    email: info@polklusbedrijf.nl
+
+analytics:
+  umami_id:
 
 address:
   street: Händelstraat 17

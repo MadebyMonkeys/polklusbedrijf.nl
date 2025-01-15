@@ -6,6 +6,7 @@ import robots from "lume/plugins/robots.ts";
 import sass from "lume/plugins/sass.ts";
 import svgo from "lume/plugins/svgo.ts";
 import transform_images from "lume/plugins/transform_images.ts";
+import decapCMS from "lume/plugins/decap_cms.ts";
 
 export default function () {
   return (site: Site) => {
@@ -28,6 +29,7 @@ export default function () {
       .use(robots())
       .use(sass())
       .use(svgo())
-      .use(transform_images());
+      .use(transform_images())
+      .use(decapCMS());
   };
 }

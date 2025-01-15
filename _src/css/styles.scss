@@ -42,12 +42,16 @@ hr {
     margin-top: 0;
 }
 
-.rounded-image {
+.image--rounded {
     border-radius: var(--space-s) var(--space-s) var(--space-s) 0;
 }
 
 .text--centered {
     margin: auto;
+}
+
+.max-width--unset {
+    max-width: unset;
 }
 
 
@@ -127,7 +131,7 @@ hr {
 
     .checkmarks {
         --flow-space: var(--space-3xs);
-
+        
         li {
             display: inline-flex;
             align-items: center;
@@ -284,8 +288,27 @@ hr {
     }
 }
 
-.projecten .grid-auto-fit {
-    margin-top: var(--space-s-l);
+.projecten {
+
+    .grid-auto-fit {
+        margin-top: var(--space-s-l);
+    }
+}
+
+.gallery {
+    margin-block-start: var(--space-l-2xl);
+    position: relative;
+
+    &__item {
+        overflow: clip;
+    }
+
+    &__image {
+        width: auto;
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
 }
 
 .algemene-voorwaarden.narrow {
