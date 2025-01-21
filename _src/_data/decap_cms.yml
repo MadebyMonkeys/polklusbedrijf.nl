@@ -122,7 +122,7 @@ collections:
                   - { name: "title", label: "Title", widget: "string" }
                   - { name: "url", label: "Url", widget: "string" }
 
-              - name: "check-list"
+              - name: "check_list"
                 label: "list"
                 widget: "list"
                 fields:
