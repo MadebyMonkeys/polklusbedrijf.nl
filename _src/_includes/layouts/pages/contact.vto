@@ -9,13 +9,13 @@ layout: layouts/page.vto
             <h3 class="section-title h1">{{ contact_section.title }}</h3>
             <p>{{ contact_section.body }}</p>
             <ul class="company-info flow" role="list">
-                <!-- <li><ion-icon name="pin"></ion-icon> {{ site.address.street }} <br> {{ site.address.zipcode }} {{ site.address.city }}</li> -->
-                <li class="flex-group ai--center"><ion-icon name="call"></ion-icon> <a href="tel:{{ site.company.contact.phone }}">{{ site.company.contact.phone }}</a></li>
-                <li class="flex-group ai--center"><ion-icon name="mail"></ion-icon> {{ site.company.contact.email }}</li>
+                <!-- <li><ion-icon name="pin"></ion-icon> {{ company.address.street }} <br> {{ company.address.zipcode }} {{ company.address.city }}</li> -->
+                <li class="flex-group ai--center"><ion-icon name="call"></ion-icon> <a href="tel:{{ company.contact.phone }}">{{ company.contact.phone }}</a></li>
+                <li class="flex-group ai--center"><ion-icon name="mail"></ion-icon> {{ company.contact.email }}</li>
                 <li class="socials flow">
                     <h3>Onze socials</h3>
                     <div class="social-links">
-                        {{ for social of site.socials }}
+                        {{ for social of company.socials }}
                             <a href="{{ social.url }}" class="link"><ion-icon size="xlarge" name="{{ social.icon }}"></ion-icon></a>
                         {{ /for }}
                     </div>

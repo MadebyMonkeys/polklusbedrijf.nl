@@ -19,28 +19,17 @@ collections:
         label: "General Settings"
         file: "_src/_data/site.yml"
         fields:
-          - name: company
-            label: "Bedrijfs informatie"
+          - { name: "name", label: "Naam", widget: "string" }
+
+          - name: "metas"
+            label: "metas"
             widget: "object"
             fields:
-              - { name: "name", label: "Naam", widget: "string" }
-              - { name: "logo", label: "Logo", widget: "image" }
-              - { name: "kvk", label: "Kvk nummer", widget: "string" }
-
-              - name: contact
-                label: "Contact gegevens"
-                widget: "object"
-                fields:
-                  - { name: "phone", label: "Telefoon", widget: "string" }
-                  - { name: "email", label: "Email", widget: "string" }
-
-              - name: "address"
-                label: "Adress"
-                widget: "object"
-                fields:
-                  - { name: "street", label: "Straat", widget: "string" }
-                  - { name: "zipcode", label: "Postcode", widget: "string" }
-                  - { name: "city", label: "Stad", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "string" }
+              - { name: "icon", label: "Icon", widget: "image" }
+              - { name: "lang", label: "Language", widget: "string" }
+              - { name: "generator", label: "Generator", widget: "boolean" }
 
           - name: analytics
             label: "Analytics"
@@ -51,6 +40,29 @@ collections:
                   label: "Umami analytics key",
                   widget: "string",
                 }
+
+      - name: "company"
+        label: "Company Settings"
+        file: "_src/_data/company.yml"
+        fields:
+          - { name: "name", label: "Naam", widget: "string" }
+          - { name: "logo", label: "Logo", widget: "image" }
+          - { name: "kvk", label: "Kvk nummer", widget: "string" }
+
+          - name: contact
+            label: "Contact gegevens"
+            widget: "object"
+            fields:
+              - { name: "phone", label: "Telefoon", widget: "string" }
+              - { name: "email", label: "Email", widget: "string" }
+
+          - name: "address"
+            label: "Adress"
+            widget: "object"
+            fields:
+              - { name: "street", label: "Straat", widget: "string" }
+              - { name: "zipcode", label: "Postcode", widget: "string" }
+              - { name: "city", label: "Stad", widget: "string" }
 
           - name: "socials"
             label: "Socials"
@@ -229,6 +241,22 @@ collections:
             fields:
               - { name: "subtitle", label: "Subtitle", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
+
+          - { name: "body", label: "Body", widget: "markdown" }
+
+      - name: "algemene-voorwaarden"
+        label: "Algemene voorwaarden"
+        file: "_src/algemene-voorwaarden.md"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "string" }
+
+          - name: "metas"
+            label: "metas"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "string" }
 
           - { name: "body", label: "Body", widget: "markdown" }
 
