@@ -1,6 +1,6 @@
 .grid-auto-fit {
     display: grid;
-    grid-template-columns: repeat(var(--grid-placement, auto-fit), minmax(var(--grid-min-col-size, 16em), 1fr));
+    grid-template-columns: repeat(var(--grid-placement, auto-fit), minmax(var(--grid-min-col-size, 16rem), 1fr));
     gap: var(--grid-gap, var(--space-s-l));
 }
 

@@ -1,5 +1,5 @@
 export default {
   type: "service",
-  layout: "layouts/dienst.vto",
+  layout: "layouts/pages/diensten/single.vto",
   templateEngine: "vto,md",
 };

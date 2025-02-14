@@ -1,5 +1,5 @@
 ---
-layout: layouts/pages/services.vto
+layout: layouts/pages/diensten/list.vto
 
 title: "Diensten pagina"
 description: "Diensten pagina beschrijving"

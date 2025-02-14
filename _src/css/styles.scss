@@ -65,7 +65,7 @@ hr {
 }
 
 .section-subtitle {
-    color: var(--primary-450);
+    color: var(--primary-500);
     font-size: var(--fs-300);
     font-weight: var(--fw-bold);
     line-height: 1.1;
@@ -106,7 +106,7 @@ hr {
     }
 
     &__name {
-        color: var(--secondary-850);
+        color: var(--secondary-800);
         font-size: var(--fs-300);
         font-weight: var(--fw-bold);
         text-transform: uppercase;
@@ -136,12 +136,12 @@ hr {
             display: inline-flex;
             align-items: center;
             gap: var(--space-xs);
-            color: var(--secondary-800);
+            color: var(--secondary-900);
             font-weight: var(--fw-medium);
     
             ion-icon {
                 flex-shrink: 0;
-                color: var(--primary-350);
+                color: var(--primary-500);
             }
         }
     }
@@ -226,9 +226,10 @@ hr {
 
         &__content {
             display: flex;
-            max-width: fit-content;
+            max-width: max-content;
 
             &::before {
+                color: var(--primary-400);
                 content: "\201C";
                 font-size: var(--fs-800);
                 font-weight: var(--fw-bold);
@@ -244,7 +245,7 @@ hr {
         }
 
         &__author {
-            color: var(--neutral-800);
+            color: var(--secondary-900);
             font-size: var(--fs-400);
             font-weight: var(--fw-medium);
             font-style: italic;

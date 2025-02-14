@@ -2,443 +2,297 @@
 // Colors
 // -----------------------------------------------------------------------------
 
-$-clr-red-50: #FAEEEB;
-$-clr-red-100: #F8DCD6;
-$-clr-red-150: #F6CABF;
-$-clr-red-200: #f5b7a8;
-$-clr-red-250: #f5a390;
-$-clr-red-300: #f38f79;
-$-clr-red-350: #f17961;
-$-clr-red-400: #f06048;
-$-clr-red-450: #ee402e;
-$-clr-red-500: #d93526;
-$-clr-red-550: #c52f21;
-$-clr-red-600: #af291d;
-$-clr-red-650: #9b2318;
-$-clr-red-700: #861d13;
-$-clr-red-750: #72170f;
-$-clr-red-800: #5c160d;
-$-clr-red-850: #45150c;
-$-clr-red-900: #30130a;
-$-clr-red-950: #1c0d06;
+/* White */
+$-clr-white: oklch(100% 0 0);
 
+/* Black */
+$-clr-black: oklch(0% 0 0);
 
+/* Slate */
+$-clr-slate-50: oklch(98.42% 0.0034 247.86);
+$-clr-slate-100: oklch(96.83% 0.0069 247.9);
+$-clr-slate-200: oklch(92.88% 0.0126 255.51);
+$-clr-slate-300: oklch(86.9% 0.0198 252.89);
+$-clr-slate-400: oklch(71.07% 0.0351 256.79);
+$-clr-slate-500: oklch(55.44% 0.0407 257.42);
+$-clr-slate-600: oklch(44.55% 0.0374 257.28);
+$-clr-slate-700: oklch(37.17% 0.0392 257.29);
+$-clr-slate-800: oklch(27.95% 0.0368 260.03);
+$-clr-slate-900: oklch(20.77% 0.0398 265.75);
+$-clr-slate-950: oklch(12.88% 0.0406 264.7);
 
-$-clr-pink-50: #fbedef;
-$-clr-pink-100: #f9dbdf;
-$-clr-pink-150: #f9c8ce;
-$-clr-pink-200: #f9b4be;
-$-clr-pink-250: #f99eae;
-$-clr-pink-300: #f8889e;
-$-clr-pink-350: #f7708e;
-$-clr-pink-400: #f6547e;
-$-clr-pink-450: #f42c6f;
-$-clr-pink-500: #d92662;
-$-clr-pink-550: #c72259;
-$-clr-pink-600: #b21e4f;
-$-clr-pink-650: #9d1945;
-$-clr-pink-700: #88143b;
-$-clr-pink-750: #740f31;
-$-clr-pink-800: #5f0e28;
-$-clr-pink-850: #4b0c1f;
-$-clr-pink-900: #380916;
-$-clr-pink-950: #25060c;
+/* Gray */
+$-clr-gray-50: oklch(98.46% 0.0017 247.84);
+$-clr-gray-100: oklch(96.7% 0.0029 264.54);
+$-clr-gray-200: oklch(92.76% 0.0058 264.53);
+$-clr-gray-300: oklch(87.17% 0.0093 258.34);
+$-clr-gray-400: oklch(71.37% 0.0192 261.32);
+$-clr-gray-500: oklch(55.1% 0.0234 264.36);
+$-clr-gray-600: oklch(55.1% 0.0234 264.36);
+$-clr-gray-700: oklch(37.29% 0.0306 259.73);
+$-clr-gray-800: oklch(27.81% 0.0296 256.85);
+$-clr-gray-900: oklch(21.01% 0.0318 264.66);
+$-clr-gray-950: oklch(12.96% 0.0274 261.69);
 
+/* Zinc */
+$-clr-zinc-50: oklch(98.51% 0 0);
+$-clr-zinc-100: oklch(96.74% 0.0013 286.38);
+$-clr-zinc-200: oklch(91.97% 0.004 286.32);
+$-clr-zinc-300: oklch(87.11% 0.0055 286.29);
+$-clr-zinc-400: oklch(71.18% 0.0129 286.07);
+$-clr-zinc-500: oklch(55.17% 0.0138 285.94);
+$-clr-zinc-600: oklch(44.19% 0.0146 285.79);
+$-clr-zinc-700: oklch(37.03% 0.0119 285.81);
+$-clr-zinc-800: oklch(27.39% 0.0055 286.03);
+$-clr-zinc-900: oklch(21.03% 0.0059 285.89);
+$-clr-zinc-950: oklch(14.08% 0.0044 285.82);
 
+/* Neutral */
+$-clr-neutral-50: oklch(98.51% 0 0);
+$-clr-neutral-100: oklch(97.02% 0 0);
+$-clr-neutral-200: oklch(92.19% 0 0);
+$-clr-neutral-300: oklch(86.99% 0 0);
+$-clr-neutral-400: oklch(71.55% 0 0);
+$-clr-neutral-500: oklch(55.55% 0 0);
+$-clr-neutral-600: oklch(43.86% 0 0);
+$-clr-neutral-700: oklch(37.15% 0 0);
+$-clr-neutral-800: oklch(26.86% 0 0);
+$-clr-neutral-900: oklch(20.46% 0 0);
+$-clr-neutral-950: oklch(14.48% 0 0);
 
-$-clr-fuchsia-50: #fbedf4;
-$-clr-fuchsia-100: #f9daea;
-$-clr-fuchsia-150: #f9c6e1;
-$-clr-fuchsia-200: #f9b1d8;
-$-clr-fuchsia-250: #fa9acf;
-$-clr-fuchsia-300: #f983c7;
-$-clr-fuchsia-350: #f869bf;
-$-clr-fuchsia-400: #f748b7;
-$-clr-fuchsia-450: #ed2aac;
-$-clr-fuchsia-500: #d9269d;
-$-clr-fuchsia-550: #c1208b;
-$-clr-fuchsia-600: #ac1c7c;
-$-clr-fuchsia-650: #98176d;
-$-clr-fuchsia-700: #84135e;
-$-clr-fuchsia-750: #700e4f;
-$-clr-fuchsia-800: #5c0d41;
-$-clr-fuchsia-850: #480b33;
-$-clr-fuchsia-900: #360925;
-$-clr-fuchsia-950: #230518;
+/* Stone */
+$-clr-stone-50: oklch(98.48% 0.0013 106.42);
+$-clr-stone-100: oklch(96.99% 0.0013 106.42);
+$-clr-stone-200: oklch(92.32% 0.0026 48.72);
+$-clr-stone-300: oklch(86.87% 0.0043 56.37);
+$-clr-stone-400: oklch(71.61% 0.0091 56.26);
+$-clr-stone-500: oklch(55.34% 0.0116 58.07);
+$-clr-stone-600: oklch(44.44% 0.0096 73.64);
+$-clr-stone-700: oklch(37.41% 0.0087 67.56);
+$-clr-stone-800: oklch(26.85% 0.0063 34.3);
+$-clr-stone-900: oklch(21.61% 0.0061 56.04);
+$-clr-stone-950: oklch(14.69% 0.0041 49.25);
 
+/* Red */
+$-clr-red-50: oklch(97.05% 0.0129 17.38);
+$-clr-red-100: oklch(93.56% 0.0309 17.72);
+$-clr-red-200: oklch(88.45% 0.0593 18.33);
+$-clr-red-300: oklch(80.77% 0.1035 19.57);
+$-clr-red-400: oklch(71.06% 0.1661 22.22);
+$-clr-red-500: oklch(63.68% 0.2078 25.33);
+$-clr-red-600: oklch(57.71% 0.2152 27.33);
+$-clr-red-700: oklch(50.54% 0.1905 27.52);
+$-clr-red-800: oklch(44.37% 0.1613 26.9);
+$-clr-red-900: oklch(39.58% 0.1331 25.72);
+$-clr-red-950: oklch(25.75% 0.0886 26.04);
 
+/* Orange */
+$-clr-orange-50: oklch(97.96% 0.015771618519989913 73.68407794443895);
+$-clr-orange-100: oklch(95.42% 0.03715446392304164 75.16435946755645);
+$-clr-orange-200: oklch(90.15% 0.0729 70.7);
+$-clr-orange-300: oklch(83.66% 0.1165 66.29);
+$-clr-orange-400: oklch(75.76% 0.159 55.93);
+$-clr-orange-500: oklch(70.49% 0.1867 47.6);
+$-clr-orange-600: oklch(64.61% 0.1943 41.12);
+$-clr-orange-700: oklch(55.34% 0.1739 38.4);
+$-clr-orange-800: oklch(46.98% 0.143 37.3);
+$-clr-orange-900: oklch(40.84% 0.1165 38.17);
+$-clr-orange-950: oklch(26.59% 0.0762 36.26);
 
-$-clr-purple-50: #F8EEF9;
-$-clr-purple-100: #F2DCF4;
-$-clr-purple-150: #EDC9F1;
-$-clr-purple-200: #E7B6EE;
-$-clr-purple-250: #E2A3EB;
-$-clr-purple-300: #DB90E8;
-$-clr-purple-350: #D47DE4;
-$-clr-purple-400: #CD68E0;
-$-clr-purple-450: #C652DC;
-$-clr-purple-500: #B645CD;
-$-clr-purple-550: #AA40BF;
-$-clr-purple-600: #9236A4;
-$-clr-purple-650: #802E90;
-$-clr-purple-700: #6F277D;
-$-clr-purple-750: #5E206B;
-$-clr-purple-800: #4D1A57;
-$-clr-purple-850: #3D1545;
-$-clr-purple-900: #2D0F33;
-$-clr-purple-950: #1E0820;
+/* Amber */
+$-clr-amber-50: oklch(98.69% 0.021403008259500936 95.27742336745216);
+$-clr-amber-100: oklch(96.19% 0.058 95.62);
+$-clr-amber-200: oklch(92.43% 0.1151 95.75);
+$-clr-amber-300: oklch(87.9% 0.1534 91.61);
+$-clr-amber-400: oklch(83.69% 0.1644 84.43);
+$-clr-amber-500: oklch(76.86% 0.1647 70.08);
+$-clr-amber-600: oklch(66.58% 0.1574 58.32);
+$-clr-amber-700: oklch(55.53% 0.1455 49);
+$-clr-amber-800: oklch(47.32% 0.1247 46.2);
+$-clr-amber-900: oklch(41.37% 0.1054 45.9);
+$-clr-amber-950: oklch(27.91% 0.0742 45.64);
 
+/* Yellow */
+$-clr-yellow-50: oklch(98.73% 0.0262 102.21);
+$-clr-yellow-100: oklch(97.29% 0.0693 103.19);
+$-clr-yellow-200: oklch(94.51% 0.1243 101.54);
+$-clr-yellow-300: oklch(90.52% 0.1657 98.11);
+$-clr-yellow-400: oklch(86.06% 0.1731 91.94);
+$-clr-yellow-500: oklch(79.52% 0.1617 86.05);
+$-clr-yellow-600: oklch(68.06% 0.1423 75.83);
+$-clr-yellow-700: oklch(55.38% 0.1207 66.44);
+$-clr-yellow-800: oklch(47.62% 0.1034 61.91);
+$-clr-yellow-900: oklch(42.1% 0.0897 57.71);
+$-clr-yellow-950: oklch(28.57% 0.0639 53.81);
 
+/* Lime */
+$-clr-lime-50: oklch(98.57% 0.031 120.76);
+$-clr-lime-100: oklch(96.69% 0.0659 122.33);
+$-clr-lime-200: oklch(93.82% 0.1217 124.32);
+$-clr-lime-300: oklch(89.72% 0.1786 126.67);
+$-clr-lime-400: oklch(84.93% 0.2073 128.85);
+$-clr-lime-500: oklch(76.81% 0.2044 130.85);
+$-clr-lime-600: oklch(64.82% 0.1754 131.68);
+$-clr-lime-700: oklch(53.22% 0.1405 131.59);
+$-clr-lime-800: oklch(45.28% 0.1129 130.93);
+$-clr-lime-900: oklch(40.5% 0.0956 131.06);
+$-clr-lime-950: oklch(27.41% 0.0688 132.11);
 
-$-clr-violet-50: #F3EFF7;
-$-clr-violet-100: #E8DFF2;
-$-clr-violet-150: #DECFED;
-$-clr-violet-200: #D3BFE8;
-$-clr-violet-250: #C9AFE4;
-$-clr-violet-300: #BD9FDF;
-$-clr-violet-350: #B290D9;
-$-clr-violet-400: #A780D4;
-$-clr-violet-450: #9B71CF;
-$-clr-violet-500: #9062CA;
-$-clr-violet-550: #8352C5;
-$-clr-violet-600: #7540BF;
-$-clr-violet-650: #6935B3;
-$-clr-violet-700: #5B2D9C;
-$-clr-violet-750: #4D2585;
-$-clr-violet-800: #3F1E6D;
-$-clr-violet-850: #321856;
-$-clr-violet-900: #251140;
-$-clr-violet-950: #190928;
+/* Green */
+$-clr-green-50: oklch(98.19% 0.0181 155.83);
+$-clr-green-100: oklch(96.24% 0.0434 156.74);
+$-clr-green-200: oklch(92.5% 0.0806 155.99);
+$-clr-green-300: oklch(87.12% 0.1363 154.45);
+$-clr-green-400: oklch(80.03% 0.1821 151.71);
+$-clr-green-500: oklch(72.27% 0.192 149.58);
+$-clr-green-600: oklch(62.71% 0.1699 149.21);
+$-clr-green-700: oklch(52.73% 0.1371 150.07);
+$-clr-green-800: oklch(44.79% 0.1083 151.33);
+$-clr-green-900: oklch(39.25% 0.0896 152.54);
+$-clr-green-950: oklch(26.64% 0.0628 152.93);
 
+/* Emerald */
+$-clr-emerald-50: oklch(97.93% 0.0207 166.11);
+$-clr-emerald-100: oklch(95.05% 0.0507 163.05);
+$-clr-emerald-200: oklch(90.49% 0.0895 164.15);
+$-clr-emerald-300: oklch(84.52% 0.1299 164.98);
+$-clr-emerald-400: oklch(77.29% 0.1535 163.22);
+$-clr-emerald-500: oklch(69.59% 0.1491 162.48);
+$-clr-emerald-600: oklch(59.6% 0.1274 163.23);
+$-clr-emerald-700: oklch(50.81% 0.1049 165.61);
+$-clr-emerald-800: oklch(43.18% 0.0865 166.91);
+$-clr-emerald-900: oklch(37.8% 0.073 168.94);
+$-clr-emerald-950: oklch(26.21% 0.0487 172.55);
 
+/* Teal */
+$-clr-teal-50: oklch(98.36% 0.0142 180.72);
+$-clr-teal-100: oklch(95.27% 0.0498 180.8);
+$-clr-teal-200: oklch(91% 0.0927 180.43);
+$-clr-teal-300: oklch(85.49% 0.1251 181.07);
+$-clr-teal-400: oklch(78.45% 0.1325 181.91);
+$-clr-teal-500: oklch(70.38% 0.123 182.5);
+$-clr-teal-600: oklch(60.02% 0.1038 184.7);
+$-clr-teal-700: oklch(51.09% 0.0861 186.39);
+$-clr-teal-800: oklch(43.7% 0.0705 188.22);
+$-clr-teal-900: oklch(38.61% 0.059 188.42);
+$-clr-teal-950: oklch(27.73% 0.0447 192.52);
 
-$-clr-indigo-50: #F2F0F9;
-$-clr-indigo-100: #E5E0F4;
-$-clr-indigo-150: #D8D0F1;
-$-clr-indigo-200: #CAC1EE;
-$-clr-indigo-250: #BDB2EC;
-$-clr-indigo-300: #B0A3E8;
-$-clr-indigo-350: #A294E5;
-$-clr-indigo-400: #9486E1;
-$-clr-indigo-450: #8577DD;
-$-clr-indigo-500: #7569DA;
-$-clr-indigo-550: #655CD6;
-$-clr-indigo-600: #524ED2;
-$-clr-indigo-650: #4040BF;
-$-clr-indigo-700: #3838AB;
-$-clr-indigo-750: #2F2F92;
-$-clr-indigo-800: #272678;
-$-clr-indigo-850: #1F1E5E;
-$-clr-indigo-900: #181546;
-$-clr-indigo-950: #110B31;
+/* Cyan */
+$-clr-cyan-50: oklch(98.41% 0.0189 200.87);
+$-clr-cyan-100: oklch(95.63% 0.0443 203.39);
+$-clr-cyan-200: oklch(91.67% 0.0772 205.04);
+$-clr-cyan-300: oklch(86.51% 0.1153 207.08);
+$-clr-cyan-400: oklch(79.71% 0.1339 211.53);
+$-clr-cyan-500: oklch(71.48% 0.1257 215.22);
+$-clr-cyan-600: oklch(60.89% 0.1109 221.72);
+$-clr-cyan-700: oklch(51.98% 0.0936 223.13);
+$-clr-cyan-800: oklch(45% 0.0771 224.28);
+$-clr-cyan-900: oklch(39.82% 0.0664 227.39);
+$-clr-cyan-950: oklch(30.18% 0.0541 229.7);
 
+/* Sky */
+$-clr-sky-50: oklch(97.71% 0.012485946526696063 236.61974498403976);
+$-clr-sky-100: oklch(95.14% 0.025 236.82);
+$-clr-sky-200: oklch(90.14% 0.0555 230.9);
+$-clr-sky-300: oklch(82.76% 0.1013 230.32);
+$-clr-sky-400: oklch(75.35% 0.139 232.66);
+$-clr-sky-500: oklch(68.47% 0.1479 237.32);
+$-clr-sky-600: oklch(58.76% 0.1389 241.97);
+$-clr-sky-700: oklch(50% 0.1193 242.75);
+$-clr-sky-800: oklch(44.34% 0.1 240.79);
+$-clr-sky-900: oklch(39.12% 0.0845 240.88);
+$-clr-sky-950: oklch(29.35% 0.0632 243.16);
 
+/* Blue */
+$-clr-blue-50: oklch(97.05% 0.01418224665972208 254.6041641690868);
+$-clr-blue-100: oklch(93.19% 0.0316 255.59);
+$-clr-blue-200: oklch(88.23% 0.0571 254.13);
+$-clr-blue-300: oklch(80.91% 0.0956 251.81);
+$-clr-blue-400: oklch(71.37% 0.1434 254.62);
+$-clr-blue-500: oklch(62.31% 0.188 259.81);
+$-clr-blue-600: oklch(54.61% 0.2152 262.88);
+$-clr-blue-700: oklch(48.82% 0.2172 264.38);
+$-clr-blue-800: oklch(42.44% 0.1809 265.64);
+$-clr-blue-900: oklch(37.91% 0.1378 265.52);
+$-clr-blue-950: oklch(28.23% 0.0874 267.94);
 
-$-clr-blue-50: #F0F0FB;
-$-clr-blue-100: #E0E1FA;
-$-clr-blue-150: #D0D2FA;
-$-clr-blue-200: #BFC3FA;
-$-clr-blue-250: #AEB5FB;
-$-clr-blue-300: #9CA7FA;
-$-clr-blue-350: #8999F9;
-$-clr-blue-400: #748BF8;
-$-clr-blue-450: #5C7EF8;
-$-clr-blue-500: #3C71F7;
-$-clr-blue-550: #2060DF;
-$-clr-blue-600: #1D59D0;
-$-clr-blue-650: #184EB8;
-$-clr-blue-700: #1343A0;
-$-clr-blue-750: #0F3888;
-$-clr-blue-800: #0F2D70;
-$-clr-blue-850: #0E2358;
-$-clr-blue-900: #0C1A41;
-$-clr-blue-950: #080F2D;
+/* Indigo */
+$-clr-indigo-50: oklch(96.19% 0.0179 272.31);
+$-clr-indigo-100: oklch(92.99% 0.0334 272.79);
+$-clr-indigo-200: oklch(86.99% 0.0622 274.04);
+$-clr-indigo-300: oklch(78.53% 0.1041 274.71);
+$-clr-indigo-400: oklch(68.01% 0.1583 276.93);
+$-clr-indigo-500: oklch(58.54% 0.2041 277.12);
+$-clr-indigo-600: oklch(51.06% 0.2301 276.97);
+$-clr-indigo-700: oklch(45.68% 0.2146 277.02);
+$-clr-indigo-800: oklch(39.84% 0.1773 277.37);
+$-clr-indigo-900: oklch(35.88% 0.1354 278.7);
+$-clr-indigo-950: oklch(25.73% 0.0861 281.29);
 
+/* Violet */
+$-clr-violet-50: oklch(96.19% 0.0179 272.31);
+$-clr-violet-100: oklch(94.33% 0.0284 294.59);
+$-clr-violet-200: oklch(89.43% 0.0549 293.28);
+$-clr-violet-300: oklch(81.12% 0.1013 293.57);
+$-clr-violet-400: oklch(70.9% 0.1592 293.54);
+$-clr-violet-500: oklch(60.56% 0.2189 292.72);
+$-clr-violet-600: oklch(54.13% 0.2466 293.01);
+$-clr-violet-700: oklch(49.07% 0.2412 292.58);
+$-clr-violet-800: oklch(43.2% 0.2106 292.76);
+$-clr-violet-900: oklch(37.96% 0.1783 293.74);
+$-clr-violet-950: oklch(28.27% 0.1351 291.09);
 
+/* Purple */
+$-clr-purple-50: oklch(97.68% 0.0142 308.3);
+$-clr-purple-100: oklch(94.64% 0.0327 307.17);
+$-clr-purple-200: oklch(90.24% 0.06040838720918992 306.7029975247675);
+$-clr-purple-300: oklch(82.68% 0.1082 306.38);
+$-clr-purple-400: oklch(72.17% 0.1767 305.5);
+$-clr-purple-500: oklch(62.68% 0.2325 303.9);
+$-clr-purple-600: oklch(55.75% 0.2525 302.32);
+$-clr-purple-700: oklch(49.55% 0.2369 301.92);
+$-clr-purple-800: oklch(43.83% 0.1983 303.72);
+$-clr-purple-900: oklch(38.07% 0.1661 304.99);
+$-clr-purple-950: oklch(29.05% 0.1432 302.72);
 
-$-clr-azure-50: #E9F2FC;
-$-clr-azure-100: #D1E5FB;
-$-clr-azure-150: #B7D9FC;
-$-clr-azure-200: #9BCCFD;
-$-clr-azure-250: #79C0FF;
-$-clr-azure-300: #51B4FF;
-$-clr-azure-350: #01AAFF;
-$-clr-azure-400: #029AE8;
-$-clr-azure-450: #018CD4;
-$-clr-azure-500: #017FC0;
-$-clr-azure-550: #0172AD;
-$-clr-azure-600: #02659A;
-$-clr-azure-650: #015887;
-$-clr-azure-700: #014C75;
-$-clr-azure-750: #014063;
-$-clr-azure-800: #033452;
-$-clr-azure-850: #052940;
-$-clr-azure-900: #061E2F;
-$-clr-azure-950: #04121D;
+/* Fuchsia */
+$-clr-fuchsia-50: oklch(97.73% 0.017319799618005262 320.057924702978);
+$-clr-fuchsia-100: oklch(95.2% 0.035966474160176905 318.851883433472);
+$-clr-fuchsia-200: oklch(90.3% 0.0732 319.62);
+$-clr-fuchsia-300: oklch(83.3% 0.1322 321.43);
+$-clr-fuchsia-400: oklch(74.77% 0.207 322.16);
+$-clr-fuchsia-500: oklch(66.68% 0.2591 322.15);
+$-clr-fuchsia-600: oklch(59.15% 0.2569 322.9);
+$-clr-fuchsia-700: oklch(51.8% 0.2258 323.95);
+$-clr-fuchsia-800: oklch(45.19% 0.1922 324.59);
+$-clr-fuchsia-900: oklch(40.07% 0.1601 325.61);
+$-clr-fuchsia-950: oklch(29.32% 0.1309 325.66);
 
+/* Pink */
+$-clr-pink-50: oklch(97.14% 0.0141 343.2);
+$-clr-pink-100: oklch(94.82% 0.0276 342.26);
+$-clr-pink-200: oklch(89.94% 0.0589 343.23);
+$-clr-pink-300: oklch(82.28% 0.1095 346.02);
+$-clr-pink-400: oklch(72.53% 0.1752 349.76);
+$-clr-pink-500: oklch(65.59% 0.2118 354.31);
+$-clr-pink-600: oklch(59.16% 0.218 0.58);
+$-clr-pink-700: oklch(52.46% 0.199 3.96);
+$-clr-pink-800: oklch(45.87% 0.1697 3.82);
+$-clr-pink-900: oklch(40.78% 0.1442 2.43);
+$-clr-pink-950: oklch(28.45% 0.1048 3.91);
 
-
-$-clr-cyan-50: #C3FCFA;
-$-clr-cyan-100: #58FAF9;
-$-clr-cyan-150: #3DECEB;
-$-clr-cyan-200: #25DDDD;
-$-clr-cyan-250: #0CCECE;
-$-clr-cyan-300: #0AC2C2;
-$-clr-cyan-350: #0AB1B1;
-$-clr-cyan-400: #05A2A2;
-$-clr-cyan-450: #059494;
-$-clr-cyan-500: #058686;
-$-clr-cyan-550: #047878;
-$-clr-cyan-600: #046A6A;
-$-clr-cyan-650: #025D5D;
-$-clr-cyan-700: #015050;
-$-clr-cyan-750: #014343;
-$-clr-cyan-800: #043737;
-$-clr-cyan-850: #052B2B;
-$-clr-cyan-900: #051F1F;
-$-clr-cyan-950: #041413;
-
-
-
-$-clr-jade-50: #CBFCE1;
-$-clr-jade-100: #70FCBA;
-$-clr-jade-150: #39F1A6;
-$-clr-jade-200: #21E299;
-$-clr-jade-250: #00CC88;
-$-clr-jade-300: #00C482;
-$-clr-jade-350: #00B478;
-$-clr-jade-400: #00A66E;
-$-clr-jade-450: #029764;
-$-clr-jade-500: #00895A;
-$-clr-jade-550: #007A50;
-$-clr-jade-600: #006D46;
-$-clr-jade-650: #005F3D;
-$-clr-jade-700: #015234;
-$-clr-jade-750: #00452B;
-$-clr-jade-800: #033823;
-$-clr-jade-850: #042C1B;
-$-clr-jade-900: #052014;
-$-clr-jade-950: #04140C;
-
-
-
-$-clr-green-50: #D7FBC1;
-$-clr-green-100: #95FB62;
-$-clr-green-150: #77EF3D;
-$-clr-green-200: #62D926;
-$-clr-green-250: #5DD121;
-$-clr-green-300: #55C21E;
-$-clr-green-350: #4EB31B;
-$-clr-green-400: #47A417;
-$-clr-green-450: #409614;
-$-clr-green-500: #398712;
-$-clr-green-550: #33790F;
-$-clr-green-600: #2C6C0C;
-$-clr-green-650: #265E09;
-$-clr-green-700: #205107;
-$-clr-green-750: #1A4405;
-$-clr-green-800: #173806;
-$-clr-green-850: #152B07;
-$-clr-green-900: #131F07;
-$-clr-green-950: #0B1305;
-
-
-
-$-clr-lime-50: #DEFC85;
-$-clr-lime-100: #C1F335;
-$-clr-lime-150: #B2E51A;
-$-clr-lime-200: #A5D601;
-$-clr-lime-250: #99C801;
-$-clr-lime-300: #8EB901;
-$-clr-lime-350: #82AB00;
-$-clr-lime-400: #779C00;
-$-clr-lime-450: #6C8F00;
-$-clr-lime-500: #628100;
-$-clr-lime-550: #577400;
-$-clr-lime-600: #4D6600;
-$-clr-lime-650: #435A00;
-$-clr-lime-700: #394D00;
-$-clr-lime-750: #304100;
-$-clr-lime-800: #273500;
-$-clr-lime-850: #202902;
-$-clr-lime-900: #191D03;
-$-clr-lime-950: #101203;
-
-
-
-$-clr-yellow-50: #FDF1B4;
-$-clr-yellow-100: #F2DF0D;
-$-clr-yellow-150: #E8D600;
-$-clr-yellow-200: #D9C800;
-$-clr-yellow-250: #CABA01;
-$-clr-yellow-300: #BBAC00;
-$-clr-yellow-350: #AD9F00;
-$-clr-yellow-400: #9E9200;
-$-clr-yellow-450: #908501;
-$-clr-yellow-500: #827800;
-$-clr-yellow-550: #756B00;
-$-clr-yellow-600: #685F00;
-$-clr-yellow-650: #5B5300;
-$-clr-yellow-700: #4E4700;
-$-clr-yellow-750: #423C00;
-$-clr-yellow-800: #363100;
-$-clr-yellow-850: #2B2600;
-$-clr-yellow-900: #1F1C02;
-$-clr-yellow-950: #141103;
-
-
-
-$-clr-amber-50: #FCEFD9;
-$-clr-amber-100: #FDDEA6;
-$-clr-amber-150: #FECC63;
-$-clr-amber-200: #FFBF00;
-$-clr-amber-250: #E8AE01;
-$-clr-amber-300: #D8A100;
-$-clr-amber-350: #C79400;
-$-clr-amber-400: #B78800;
-$-clr-amber-450: #A77C00;
-$-clr-amber-500: #977000;
-$-clr-amber-550: #876400;
-$-clr-amber-600: #785800;
-$-clr-amber-650: #694D00;
-$-clr-amber-700: #5B4200;
-$-clr-amber-750: #4D3700;
-$-clr-amber-800: #3F2D00;
-$-clr-amber-850: #312302;
-$-clr-amber-900: #231A03;
-$-clr-amber-950: #161003;
-
-
-
-$-clr-pumpkin-50: #FCEEE3;
-$-clr-pumpkin-100: #FCDCC1;
-$-clr-pumpkin-150: #FCCA9B;
-$-clr-pumpkin-200: #FEB670;
-$-clr-pumpkin-250: #FFA23A;
-$-clr-pumpkin-300: #FF9500;
-$-clr-pumpkin-350: #E48500;
-$-clr-pumpkin-400: #D27A01;
-$-clr-pumpkin-450: #BF6E00;
-$-clr-pumpkin-500: #AD6400;
-$-clr-pumpkin-550: #9C5900;
-$-clr-pumpkin-600: #8B4F00;
-$-clr-pumpkin-650: #7A4400;
-$-clr-pumpkin-700: #693A00;
-$-clr-pumpkin-750: #593100;
-$-clr-pumpkin-800: #482802;
-$-clr-pumpkin-850: #372004;
-$-clr-pumpkin-900: #271805;
-$-clr-pumpkin-950: #180F04;
-
-
-
-$-clr-orange-50: #FAEEEA;
-$-clr-orange-100: #F9DCD2;
-$-clr-orange-150: #F8CAB9;
-$-clr-orange-200: #F8B79F;
-$-clr-orange-250: #F8A283;
-$-clr-orange-300: #F68E68;
-$-clr-orange-350: #F56B3D;
-$-clr-orange-400: #F45D2C;
-$-clr-orange-450: #E74B1A;
-$-clr-orange-500: #D24317;
-$-clr-orange-550: #BD3C13;
-$-clr-orange-600: #A83410;
-$-clr-orange-650: #942D0D;
-$-clr-orange-700: #7F270B;
-$-clr-orange-750: #6B220A;
-$-clr-orange-800: #561E0A;
-$-clr-orange-850: #411A0A;
-$-clr-orange-900: #2D1509;
-$-clr-orange-950: #1B0D06;
-
-
-
-$-clr-sand-50: #F2F0EC;
-$-clr-sand-100: #E8E2D2;
-$-clr-sand-150: #DAD4C2;
-$-clr-sand-200: #DAD4C2;
-$-clr-sand-250: #BEB8A7;
-$-clr-sand-300: #B0AB9B;
-$-clr-sand-350: #A39E8F;
-$-clr-sand-400: #959082;
-$-clr-sand-450: #888377;
-$-clr-sand-500: #7B776B;
-$-clr-sand-550: #6E6A60;
-$-clr-sand-600: #615E55;
-$-clr-sand-650: #55524A;
-$-clr-sand-700: #49463F;
-$-clr-sand-750: #3D3B35;
-$-clr-sand-800: #32302B;
-$-clr-sand-850: #272622;
-$-clr-sand-900: #1C1B19;
-$-clr-sand-950: #111110;
-
-
-
-$-clr-grey-50: #F1F1F1;
-$-clr-grey-100: #E2E2E2;
-$-clr-grey-150: #D4D4D4;
-$-clr-grey-200: #C6C6C6;
-$-clr-grey-250: #B9B9B9;
-$-clr-grey-300: #ABABAB;
-$-clr-grey-350: #9E9E9E;
-$-clr-grey-400: #919191;
-$-clr-grey-450: #808080;
-$-clr-grey-500: #777777;
-$-clr-grey-550: #6A6A6A;
-$-clr-grey-600: #5E5E5E;
-$-clr-grey-650: #525252;
-$-clr-grey-700: #474747;
-$-clr-grey-750: #3B3B3B;
-$-clr-grey-800: #303030;
-$-clr-grey-850: #262626;
-$-clr-grey-900: #1B1B1B;
-$-clr-grey-950: #111111;
-
-
-
-$-clr-zinc-50: #F0F1F3;
-$-clr-zinc-100: #E0E3E7;
-$-clr-zinc-150: #D1D5DB;
-$-clr-zinc-200: #C2C7D0;
-$-clr-zinc-250: #B3B9C5;
-$-clr-zinc-300: #A4ACBA;
-$-clr-zinc-350: #969EAF;
-$-clr-zinc-400: #8891A4;
-$-clr-zinc-450: #7B8495;
-$-clr-zinc-500: #6F7887;
-$-clr-zinc-550: #646B79;
-$-clr-zinc-600: #5C6370;
-$-clr-zinc-650: #4D535E;
-$-clr-zinc-700: #424751;
-$-clr-zinc-750: #373C44;
-$-clr-zinc-800: #2D3138;
-$-clr-zinc-850: #23262C;
-$-clr-zinc-900: #191C20;
-$-clr-zinc-950: #0F1114;
-
-
-
-$-clr-slate-50: #EFF1F4;
-$-clr-slate-100: #DFE3EB;
-$-clr-slate-150: #CFD5E2;
-$-clr-slate-200: #BFC7D9;
-$-clr-slate-250: #B0B9D0;
-$-clr-slate-300: #A0ACC7;
-$-clr-slate-350: #909EBE;
-$-clr-slate-400: #8191B5;
-$-clr-slate-450: #7385A9;
-$-clr-slate-500: #687899;
-$-clr-slate-550: #5D6B89;
-$-clr-slate-600: #525F7A;
-$-clr-slate-650: #48536B;
-$-clr-slate-700: #3D475C;
-$-clr-slate-750: #333C4E;
-$-clr-slate-800: #2A3140;
-$-clr-slate-850: #202632;
-$-clr-slate-900: #181C25;
-$-clr-slate-950: #0E1118;
+/* Rose */
+$-clr-rose-50: oklch(96.94% 0.0151 12.42);
+$-clr-rose-100: oklch(94.14% 0.0297 12.58);
+$-clr-rose-200: oklch(89.24% 0.0559 10);
+$-clr-rose-300: oklch(80.97% 0.1061 11.64);
+$-clr-rose-400: oklch(71.92% 0.169 13.43);
+$-clr-rose-500: oklch(64.5% 0.2154 16.44);
+$-clr-rose-600: oklch(58.58% 0.222 17.58);
+$-clr-rose-700: oklch(51.43% 0.1978 16.93);
+$-clr-rose-800: oklch(45.46% 0.1713 13.7);
+$-clr-rose-900: oklch(41.03% 0.1502 10.27);
+$-clr-rose-950: oklch(27.08% 0.1009 12.09);
 
 
 // -----------------------------------------------------------------------------
@@ -449,63 +303,39 @@ $light: (
     "neutral": (
         "50": $-clr-zinc-50,
         "100": $-clr-zinc-100,
-        "150": $-clr-zinc-150,
         "200": $-clr-zinc-200,
-        "250": $-clr-zinc-250,
         "300": $-clr-zinc-300,
-        "350": $-clr-zinc-350,
         "400": $-clr-zinc-400,
-        "450": $-clr-zinc-450,
         "500": $-clr-zinc-500,
-        "550": $-clr-zinc-550,
         "600": $-clr-zinc-600,
-        "650": $-clr-zinc-650,
         "700": $-clr-zinc-700,
-        "750": $-clr-zinc-750,
         "800": $-clr-zinc-800,
-        "850": $-clr-zinc-850,
         "900": $-clr-zinc-900,
         "950": $-clr-zinc-950,
     ),
     "primary": (
         "50": $-clr-orange-50,
         "100": $-clr-orange-100,
-        "150": $-clr-orange-150,
         "200": $-clr-orange-200,
-        "250": $-clr-orange-250,
         "300": $-clr-orange-300,
-        "350": $-clr-orange-350,
         "400": $-clr-orange-400,
-        "450": $-clr-orange-450,
         "500": $-clr-orange-500,
-        "550": $-clr-orange-550,
         "600": $-clr-orange-600,
-        "650": $-clr-orange-650,
         "700": $-clr-orange-700,
-        "750": $-clr-orange-750,
         "800": $-clr-orange-800,
-        "850": $-clr-orange-850,
         "900": $-clr-orange-900,
         "950": $-clr-orange-950,
     ),
     "secondary": (
         "50": $-clr-blue-50,
         "100": $-clr-blue-100,
-        "150": $-clr-blue-150,
         "200": $-clr-blue-200,
-        "250": $-clr-blue-250,
         "300": $-clr-blue-300,
-        "350": $-clr-blue-350,
         "400": $-clr-blue-400,
-        "450": $-clr-blue-450,
         "500": $-clr-blue-500,
-        "550": $-clr-blue-550,
         "600": $-clr-blue-600,
-        "650": $-clr-blue-650,
         "700": $-clr-blue-700,
-        "750": $-clr-blue-750,
         "800": $-clr-blue-800,
-        "850": $-clr-blue-850,
         "900": $-clr-blue-900,
         "950": $-clr-blue-950,
     ),

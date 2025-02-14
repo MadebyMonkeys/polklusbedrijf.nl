@@ -17,14 +17,14 @@ $input-select-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000
 // GLOBALS
 // -----------------------------------------------------------------------------
 
-$body-foreground: var(--neutral-650);
+$body-foreground: var(--neutral-700);
 $body-background: var(--background-color);
 $body-font-family: var(--ff-base);
 $body-font-size: var(--fs-400);
 $body-font-weight: var(--fw-regular);
 $body-line-height: 1.618;
 
-$heading-foreground: var(--secondary-850);
+$heading-foreground: var(--secondary-950);
 $heading-font-family: var(--ff-base);
 $heading-font-size: inherit;
 $heading-font-weight: var(--fw-bold);
@@ -104,9 +104,9 @@ $button-foreground: white;
 $button-foreground-hover: white;
 $button-foreground-active: white;
 
-$button-background: var(--primary-400);
+$button-background: var(--primary-500);
 $button-background-hover: var(--secondary-800);
-$button-background-active: var(--secondary-850);
+$button-background-active: var(--secondary-900);
 
 $button-font-size: var(--fs-400);
 $button-font-weight: var(--fw-semibold);

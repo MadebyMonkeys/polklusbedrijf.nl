@@ -12,9 +12,6 @@ hasLightbox: true
                 <li class="flex-group ai--center">
                     <span>Tags:</span> {{ tags |> join(', ') }}
                 </li>
-                <li class="flex-group ai--center">
-                    <span>Jaar:</span> {{ year }}
-                </li>
             </ul>
             
         </div>
@@ -25,8 +22,8 @@ hasLightbox: true
     <div class="gallery">
         <div class="grid-auto-fit" data-cols="three" data-rows="masonry">
         {{ for image of images }}
-            <a class="gallery__item" data-fslightbox="gallery" href="{{ image.path }}">
-                <img class="gallery__image image--rounded" src="{{ image.path }}" alt="{{ image.alt }}">
+            <a class="gallery__item" data-fslightbox="gallery" href="{{ image.url }}">
+                <img class="gallery__image image--rounded" src="{{ image.url }}" alt="{{ title }}">
             </a>
         {{ /for }}
         </div>

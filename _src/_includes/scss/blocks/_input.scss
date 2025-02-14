@@ -20,11 +20,11 @@ textarea {
     width: 100%;
     max-width: 100%;
     padding: var(--space-xs) var(--space-s);
-    border: 1px solid var(--neutral-250);
+    border: 1px solid var(--neutral-300);
     border-radius: var(--space-3xs);
 
     &::placeholder {
-        color: var(--neutral-200);
+        color: var(--neutral-300);
     }
 }
 

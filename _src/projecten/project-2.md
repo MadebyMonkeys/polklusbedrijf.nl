@@ -9,9 +9,9 @@ metas:
   description: =description
 
 images:
-  - "/img/project-2/project-resultaat.webp"
-  - "/img/project-2/project-resultaat.webp"
-  - "/img/project-2/project-resultaat.webp"
+  - url: "/img/project-2/project-resultaat.webp"
+  - url: "/img/project-2/project-resultaat.webp"
+  - url: "/img/project-2/project-resultaat.webp"
 
 tags:
   - Schilderwerk
