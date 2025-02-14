@@ -2,16 +2,15 @@
 title: "Project #1"
 description: Korte project beschrijving
 image: "/img/project-1/project-resultaat.webp"
-year: 2023
 
 metas:
   title: =title
   description: =description
 
 images:
-  - url: "/img/project-1/project-resultaat.webp"
-  - url: "/img/project-1/project-resultaat.webp"
-  - url: "/img/project-1/project-resultaat.webp"
+  - "/img/project-1/project-resultaat.webp"
+  - "/img/project-1/project-resultaat.webp"
+  - "/img/project-1/project-resultaat.webp"
 
 tags:
   - Schilderwerk

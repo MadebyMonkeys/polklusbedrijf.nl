@@ -2,7 +2,6 @@
 title: "Project #2"
 description: Korte project beschrijving
 image: "/img/project-2/project-resultaat.webp"
-year: 2023
 
 metas:
   title: =title
