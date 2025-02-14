@@ -24,7 +24,7 @@ $body-font-size: var(--fs-400);
 $body-font-weight: var(--fw-regular);
 $body-line-height: 1.618;
 
-$heading-foreground: var(--secondary-950);
+$heading-foreground: var(--primary-950);
 $heading-font-family: var(--ff-base);
 $heading-font-size: inherit;
 $heading-font-weight: var(--fw-bold);
@@ -46,7 +46,7 @@ $site-header-padding: var(--space-s) 0;
 $hamburger-padding: var(--size-2xs);
 
 $hamburger-icon-foreground: var(--neutral-50);
-$hamburger-icon-background: var(--secondary-900);
+$hamburger-icon-background: var(--primary-900);
 $hamburger-icon-width: 3ex;
 $hamburger-icon-stroke-width: 7px;
 $hamburger-icon-animation-timing: 600ms;
@@ -69,8 +69,8 @@ $site-nav-link-color-hover: var(--neutral-800);
 $site-nav-link-color-active: var(--neutral-50);
 
 $site-nav-link-background: transparent;
-$site-nav-link-background-hover: var(--secondary-50);
-$site-nav-link-background-active: var(--secondary-900);
+$site-nav-link-background-hover: var(--primary-50);
+$site-nav-link-background-active: var(--primary-900);
 
 $site-nav-link-padding: var(--space-xs) var(--space-m);
 $site-nav-link-border-radius:var(--space-3xs);
@@ -111,9 +111,9 @@ $button-foreground: white;
 $button-foreground-hover: white;
 $button-foreground-active: white;
 
-$button-background: var(--primary-500);
-$button-background-hover: var(--secondary-800);
-$button-background-active: var(--secondary-900);
+$button-background: var(--accent-500);
+$button-background-hover: var(--primary-800);
+$button-background-active: var(--primary-900);
 
 $button-font-size: var(--fs-400);
 $button-font-weight: var(--fw-semibold);

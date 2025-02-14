@@ -39,11 +39,11 @@ h1, h2, h3, h4 {
 
 
 a:not([class]) {
-    color: var(--link-color, var(--primary-500));
+    color: var(--link-color, var(--accent-500));
     text-decoration: none;
     
     &:is(:hover, :focus-visible) {
-        --link-color: var(--secondary-800);
+        --link-color: var(--primary-800);
         text-decoration: underline;
     }
 }
