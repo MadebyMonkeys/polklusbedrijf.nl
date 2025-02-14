@@ -8,10 +8,11 @@
 .hamburger {
     --_hamburger-icon-width: var(--hamburger-icon-width, #{$hamburger-icon-width});
     --_hamburger-icon-foreground: var(--hamburger-icon-foreground, #{$hamburger-icon-foreground});
+    --_hamburger-icon-background: var(--hamburger-icon-background, #{$hamburger-icon-background});
     --_hamburger-icon-animation-timing: var(--hamburger-icon-animation-timing, #{$hamburger-icon-animation-timing});
 
     padding: var(--space-xs) var(--space-s);
-    background: var(--secondary-850);
+    background: var(--_hamburger-icon-background);
     border: 0;
     cursor: pointer;
     border-radius: var(--space-2xs);

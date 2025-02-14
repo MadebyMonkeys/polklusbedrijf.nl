@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.has-sidebar {
+    --_has-sidebar-content-max-width: var(--has-sidebar-content-max-width, #{$sidebar-content-max-width});
+    --_has-sidebar-sidebar-max-width: var(--has-sidebar-sidebar-max-width, #{$sidebar-sidebar-max-width});
+    --_has-sidebar-gap: var(--has-sidebar-gap, #{$sidebar-gap});
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: var(--_has-sidebar-gap);
+}
+
+
+.has-sidebar {
+    &__content {
+        flex-basis: var(--_has-sidebar-content-max-width);
+        flex-grow: 9999;
+    }
+
+
+    &__sidebar {
+        flex: 1 0 var(--_has-sidebar-sidebar-max-width);
+        height: 100%;
+    }
+}

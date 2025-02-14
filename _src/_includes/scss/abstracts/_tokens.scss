@@ -45,7 +45,8 @@ $site-header-padding: var(--space-s) 0;
 //
 $hamburger-padding: var(--size-2xs);
 
-$hamburger-icon-foreground: var(--secondary-50);
+$hamburger-icon-foreground: var(--neutral-50);
+$hamburger-icon-background: var(--secondary-900);
 $hamburger-icon-width: 3ex;
 $hamburger-icon-stroke-width: 7px;
 $hamburger-icon-animation-timing: 600ms;
@@ -93,6 +94,12 @@ $split-screen-content-width: $page-layout-content-width;
 $split-screen-content-padding: clamp(1em, 6dvw, 3em);
 $split-screen-padding-block: 3.3vmax;
 $split-screen-padding-inline: $page-layout-padding-inline;
+
+
+// Has sidebar
+$sidebar-content-max-width: 50ch;
+$sidebar-sidebar-max-width: 460px;
+$sidebar-gap: var(--space-l-2xl);
 
 
 

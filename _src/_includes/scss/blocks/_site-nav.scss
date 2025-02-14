@@ -44,6 +44,7 @@
         border-radius: var(--_nav-link-border-radius);
         text-decoration: var(--_nav-link-text-decoration);
         text-transform: var(--_nav-link-text-transform);
+        width: 100%;
 
         &:is(:hover, :focus-visible) {
             --nav-link-color: #{$site-nav-link-color-hover};

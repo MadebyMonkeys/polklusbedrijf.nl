@@ -3,12 +3,20 @@ layout: layouts/page.vto
 templateEngine: [vto,md]
 ---
 
-<section class="[ services ] [ full-width ] [ region ]">
-    <div class="grid-auto-fit" data-cols="two">
-        <div class="flow">
-            <h1 class="mt-0">{{ title }}</h1>
-            {{- content |> md -}}
-        </div>
-        <img class="rounded-image" src="{{ image }}" alt="{{ title }}">
+<div class="[ has-sidebar ] [ ] [ region ]">
+    <div class="has-sidebar__content max-width--unset flow">
+        <figure class="banner">
+            <img class="image--rounded" src="{{ image }}" alt="">
+        </figure>
+        {{- content |> md -}}
     </div>
-</section>
+    <aside class="has-sidebar__sidebar">
+        <div class="widget flow bg-secondary-100">
+            <p class="h4">
+                Kan ik uw misschien ergens mee helpen? Neem gerust contact met mij op.
+            </p>
+            <a href="/offerte" class="button" data-ghost-button>Vraag een offerte aan</a> <br>
+            <a href="/contact" class="button">Contact</a>
+        </div>
+    </aside>
+</div>

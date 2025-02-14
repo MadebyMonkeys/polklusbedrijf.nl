@@ -5,6 +5,9 @@ metas:
   title: =title
   description: =description
 ---
+
+# Timmerwerk
+
 Een kast op maat, een hoogslaper, een overkapping, tussenwanden,
 wegbewijzeringsborden, omkasting voor de wasmachine, TV-wandmeubel, een extra
 verdieping op zolder of in je garage, vervangen van boeiboorden, een

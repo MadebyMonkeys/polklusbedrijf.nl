@@ -6,7 +6,7 @@
             color: #{$value};
         }
 
-        .bgcolor-#{$color}-#{$shade} { 
+        .bg-#{$color}-#{$shade} { 
             background: #{$value};
         }
     }

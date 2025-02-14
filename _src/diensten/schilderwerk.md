@@ -5,6 +5,9 @@ metas:
   title: =title
   description: =description
 ---
+
+# Schilderwerk
+
 Schilderwerk, in de breedste zin van het woord. Denk aan het schilderen van
 buitengevels, muren, deuren, kozijnen, meubels, trappen, balustrades en nog veel
 meer.

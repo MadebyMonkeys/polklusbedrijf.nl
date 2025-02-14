@@ -22,7 +22,7 @@ body {
 }
 
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     --_heading-foreground: var(--heading-foreground, #{$heading-foreground});
     --_heading-font-family: var(--heading-font-family, #{$heading-font-family});
     --_heading-font-size: var(--heading-font-size, #{$heading-font-size});

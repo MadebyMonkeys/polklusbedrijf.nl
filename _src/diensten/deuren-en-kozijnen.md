@@ -5,6 +5,9 @@ metas:
   title: =title
   description: =description
 ---
+
+# Deuren en Kozijnen
+
 Wilt u uw (binnen)deuren vervangen of zijn uw kozijnen aan reparatie of
 vervanging toe? Dan ben ik de aangewezen persoon om een beroep op te doen. Niet
 alleen kan ik al uw kozijnen vervangen, ook kan ik bestaande kozijnen een
