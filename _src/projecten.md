@@ -1,5 +1,5 @@
 ---
-layout: layouts/pages/projects.vto
+layout: layouts/pages/projecten/list.vto
 
 menu:
   visible: true

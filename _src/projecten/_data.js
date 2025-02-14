@@ -1,5 +1,5 @@
 export default {
   type: "project",
-  layout: "layouts/project.vto",
+  layout: "layouts/pages/projecten/single.vto",
   templateEngine: "vto,md",
 };
