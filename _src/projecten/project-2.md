@@ -9,8 +9,7 @@ metas:
 
 images:
   - "/img/project-2/project-resultaat.webp"
-  - "/img/project-2/project-resultaat.webp"
-  - "/img/project-2/project-resultaat.webp"
+  - "/img/project-2/626582e53500b186022265.webp"
 
 tags:
   - Schilderwerk

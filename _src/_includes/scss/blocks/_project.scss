@@ -13,10 +13,10 @@
         align-items: end;
         padding: var(--space-m);
         height: 100%;
+        min-height: 23rem;
         border-radius: var(--space-2xs);
         overflow: clip;
         text-decoration: none;
-        aspect-ratio: 16/9;
 
         @media (width < 1099px) {
             &::after {
@@ -59,7 +59,7 @@
         }
 
         &:hover {
-            box-shadow: 1px 5px 15px var(--neutral-500);
+            box-shadow: 1px 5px 10px var(--neutral-400);
         }
     }
 }
@@ -71,13 +71,15 @@
 
 .project {
     &__info {
-        font-size: .8em;
+        font-size: var(--fs-300);
+        color: var(--neutral-400);
 
         span {
+            color: var(--neutral-500);
             padding-block: var(--space-3xs);
-            font-size: var(--fs-300);
-            font-weight: var(--fw-bold);
-            text-transform: uppercase;
+            font-size: var(--fs-200);
+            font-weight: var(--fw-semibold);
+            text-transform: capitalize;
         }
     }
 }

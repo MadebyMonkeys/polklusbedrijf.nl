@@ -1,5 +1,5 @@
 ---
-title: "Project #1"
+title: "Massage salon"
 description: Korte project beschrijving
 image: "/img/project-1/project-resultaat.webp"
 
@@ -9,8 +9,7 @@ metas:
 
 images:
   - "/img/project-1/project-resultaat.webp"
-  - "/img/project-1/project-resultaat.webp"
-  - "/img/project-1/project-resultaat.webp"
+  - "/img/project-1/project-image1.webp"
 
 tags:
   - Schilderwerk

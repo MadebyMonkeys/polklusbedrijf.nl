@@ -1,5 +1,5 @@
 ---
-title: "Project #3"
+title: "Trap renovatie"
 description: Korte project beschrijving
 image: "/img/project-3/project-resultaat.webp"
 
@@ -9,8 +9,7 @@ metas:
 
 images:
   - "/img/project-3/project-resultaat.webp"
-  - "/img/project-3/project-resultaat.webp"
-  - "/img/project-3/project-resultaat.webp"
+  - "/img/project-3/project-image1.webp"
 
 tags:
   - Schilderwerk
