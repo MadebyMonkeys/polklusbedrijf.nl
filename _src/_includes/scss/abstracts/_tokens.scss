@@ -4,7 +4,7 @@
 // THEME
 // -----------------------------------------------------------------------------
 
-$active-theme: $light;
+$active-theme: $default;
 $enable-media-prefers-dark-mode: false;
 
 $flex-group-gap: var(--space-s-l);
@@ -17,7 +17,7 @@ $input-select-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000
 // GLOBALS
 // -----------------------------------------------------------------------------
 
-$body-foreground: var(--neutral-700);
+$body-foreground: var(--neutral-600);
 $body-background: var(--background-color);
 $body-font-family: var(--ff-base);
 $body-font-size: var(--fs-400);
@@ -98,7 +98,7 @@ $split-screen-padding-inline: $page-layout-padding-inline;
 
 // Has sidebar
 $sidebar-content-max-width: 50ch;
-$sidebar-sidebar-max-width: 460px;
+$sidebar-sidebar-max-width: 410px;
 $sidebar-gap: var(--space-l-2xl);
 
 

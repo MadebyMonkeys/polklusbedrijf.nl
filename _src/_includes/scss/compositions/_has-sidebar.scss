@@ -24,7 +24,8 @@
 
 
     &__sidebar {
-        flex: 1 0 var(--_has-sidebar-sidebar-max-width);
+        flex-basis: var(--_has-sidebar-sidebar-max-width);
+        flex-grow: 1;
         height: 100%;
     }
 }

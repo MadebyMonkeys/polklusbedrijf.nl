@@ -122,6 +122,7 @@ hr {
 // -----------------------------------------------------------------------------
 
 .brand {
+    --_brand-color: var(--brand-color, var(--primary-950));
     display: flex;
     align-items: center;
     gap: var(--space-2xs);
@@ -129,20 +130,18 @@ hr {
 
     svg {
         height: 6ex;
-        path {
-            fill: var(--primary-800);
 
-            &.highlight {
-                fill: var(--accent-600);
-            }
+        path {
+            fill: var(--_brand-color);
         }
     }
 
     &__name {
-        color: var(--neutral-950);
+        color: var(--_brand-color);
         font-size: var(--fs-300);
         font-weight: var(--fw-bold);
         text-transform: uppercase;
+        letter-spacing: .015ch;
     }
 }
 
