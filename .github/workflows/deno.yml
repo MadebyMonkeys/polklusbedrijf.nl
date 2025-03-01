@@ -1,0 +1,44 @@
+name: Deploy website to cPanel
+
+on:
+  push:
+    branches:
+      - main # voer deployment uit bij een wijzing in main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📂 Haal de repository op
+        uses: actions/checkout@v3
+
+      - name: 🛠️ Installeer Deno en Lume
+        run: |
+          curl -fsSL https://deno.land/install.sh | sh
+          export DENO_INSTALL="$HOME/.deno"
+          export PATH="$DENO_INSTALL/bin:$PATH"
+          deno task build
+
+      - name: 🚀 Deploy naar cPanel via rsync
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          CPANEL_USER: "polklusb"
+          CPANEL_HOST: "web79.junda.nl"
+          CPANEL_POORT: "4000"
+          DEPLOY_PATH: "/home/polklusb/public_html/"
+
+        run: |
+          # Configureer SSH key
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p 4000 -H $CPANEL_HOST >> ~/.ssh/known_hosts
+
+          # Test verbinding met SSH
+          ssh -p $CPANEL_POORT -v $CPANEL_USER@$CPANEL_HOST "echo ✅ Verbonden!"
+
+          # Synchroniseer bestanden met rsync
+          rsync -avz -e "ssh -p $CPANEL_POORT" --delete _site/ $CPANEL_USER@$CPANEL_HOST:$DEPLOY_PATH
+
+          echo "✅ Deployment voltooid!"
