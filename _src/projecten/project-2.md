@@ -1,16 +1,13 @@
 ---
-title: "Project #2"
+title: Mezzanine
 description: Korte project beschrijving
-image: "/img/project-2/project-resultaat.webp"
-
+image: /img/project-2/project-resultaat.webp
 metas:
   title: =title
   description: =description
-
 images:
-  - "/img/project-2/project-resultaat.webp"
-  - "/img/project-2/626582e53500b186022265.webp"
-
+  - /img/project-2/project-resultaat.webp
+  - /img/project-2/626582e53500b186022265.webp
 tags:
   - Schilderwerk
   - Timmerwerk
