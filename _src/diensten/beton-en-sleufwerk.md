@@ -4,8 +4,10 @@ image: /img/diensten/beton-en-sleufwerk.webp
 metas:
   title: =title
   description: =description
+description: |-
+  Na jaren lange ervaring op de bouw als frezer
+  weet u zeker dat Pol Klusbedrijf professioneel sleuf- en boorwerk levert.
 ---
-
 # Beton en Sleufwerk
 
 Ook voor het maken van een cementdekvloer of bij het (ver)leggen van
