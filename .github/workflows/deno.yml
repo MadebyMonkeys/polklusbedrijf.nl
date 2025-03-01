@@ -23,8 +23,8 @@ jobs:
       - name: 🚀 Deploy naar cPanel via rsync
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          CPANEL_USER: "polklusb"
-          CPANEL_HOST: "web79.junda.nl"
+          CPANEL_USER: ${{ secrets.CPANEL_USER }}
+          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
           CPANEL_POORT: "4000"
           DEPLOY_PATH: "/home/polklusb/public_html/"
 
