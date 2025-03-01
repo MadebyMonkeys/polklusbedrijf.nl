@@ -26,7 +26,7 @@ jobs:
           CPANEL_USER: ${{ secrets.CPANEL_USER }}
           CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
           CPANEL_POORT: "4000"
-          DEPLOY_PATH: "/home/polklusb/public_html/"
+          DEPLOY_PATH: "/home/${{ secrets.CPANEL_USER }}/public_html/"
 
         run: |
           # Configureer SSH key
