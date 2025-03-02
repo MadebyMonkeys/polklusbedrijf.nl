@@ -182,7 +182,7 @@ collections:
 
       - name: "projects"
         label: "Projecten"
-        file: "_src/projects.md"
+        file: "_src/projecten.md"
         fields:
           - { name: "title", label: "Title", widget: "string" }
           - { name: "description", label: "Description", widget: "text" }
