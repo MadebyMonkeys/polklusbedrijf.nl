@@ -5,8 +5,8 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "/_src/img/"
-public_folder: "/img/"
+media_folder: "_src/static/img/uploads"
+public_folder: "/img/uploads"
 
 collections:
   - name: "settings"
@@ -265,8 +265,8 @@ collections:
     label: "Projecten"
     label_singular: "Project"
     folder: "_src/projecten"
-    media_folder: "/_src/img"
-    public_folder: "/img"
+    media_folder: "/_src/static/img/uploads"
+    public_folder: "/img/uploads"
     create: true
     slug: "{{slug}}" # Genereert de bestandsnaam vanuit de titel
     identifier_field: "title" # Gebruikt de titel als unieke identificatie
@@ -290,6 +290,8 @@ collections:
     label: "Diensten"
     label_singular: "Dienst"
     folder: "_src/diensten"
+    media_folder: "/_src/static/img/diensten"
+    public_folder: "/img/diensten"
     create: true
     editor:
       preview: false
