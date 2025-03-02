@@ -1,4 +1,5 @@
 media: _src/img
+output: /img
 content:
   - name: general
     label: General Settings
