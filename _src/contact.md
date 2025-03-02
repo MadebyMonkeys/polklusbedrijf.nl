@@ -1,5 +1,6 @@
 ---
 layout: layouts/pages/contact.vto
+reCapatcha: true
 
 title: Contact
 description: Some contact description
