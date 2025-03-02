@@ -1,13 +1,13 @@
 ---
 title: Maatwerkkast op zolder
 description: Korte project beschrijving
-image: /img/project-1/project-resultaat.webp
+image: "/img/projects/project-1/project-resultaat.webp"
 metas:
   title: =title
   description: =description
 images:
-  - /images/projects/249293852_1059887761435191_5665954340797492201_n.jpg
-  - /images/projects/269762083_1092354601521840_2336107256373114153_n.jpg
+  - /img/projects/project-1/project-image1.webp
+  - /img/projects/project-1/project-resultaat.webp
 tags:
   - Schilderwerk
   - Timmerwerk
