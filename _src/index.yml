@@ -7,7 +7,7 @@ hero_section:
   image: /img/hero-image.webp
 projects_section:
   subtitle: Projecten
-  title: Uitgevoerde projecten
+  title: Projecten die ik heb uitgevoerd
   button:
     title: Alle projecten
     url: /projecten
