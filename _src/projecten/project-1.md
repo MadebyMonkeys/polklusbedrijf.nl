@@ -1,7 +1,7 @@
 ---
 title: Maatwerkkast op zolder
-description: Korte project beschrijving
-image: "/img/projects/project-1/project-resultaat.webp"
+description: Maatwerkkast, kastwand, zolder, multifunctionele ruimte, opbergruimte
+image: /img/projects/project-1/project-resultaat.webp
 metas:
   title: =title
   description: =description
