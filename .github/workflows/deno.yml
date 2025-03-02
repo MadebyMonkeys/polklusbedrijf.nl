@@ -3,7 +3,7 @@ name: Deploy website to cPanel
 on:
   push:
     branches:
-      - main # voer deployment uit bij een wijzing in main
+      - main # voer deployment uit bij een wijziging in main
 
 jobs:
   deploy:
@@ -38,8 +38,7 @@ jobs:
           # Test verbinding met SSH
           ssh -p $CPANEL_POORT -v $CPANEL_USER@$CPANEL_HOST "echo ✅ Verbonden!"
 
-          # Synchroniseer bestanden met rsync
-          rsync -avz -e "ssh -p $CPANEL_POORT" --delete _site/ $CPANEL_USER@$CPANEL_HOST:$DEPLOY_PATH
+          # Synchroniseer bestanden met rsync, maar behoud send-mail.php
+          rsync -avz -e "ssh -p $CPANEL_POORT" --delete --exclude="send-mail.php" _site/ $CPANEL_USER@$CPANEL_HOST:$DEPLOY_PATH
 
           echo "✅ Deployment voltooid!"
-
