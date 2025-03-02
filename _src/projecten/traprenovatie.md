@@ -6,8 +6,8 @@ metas:
   title: =title
   description: =description
 images:
-  - /img/projects/project-3/project-resultaat.webp
-  - /img/projects/project-3/project-image1.webp
+  - /img/project-3-resultaat.webp
+  - /img/project-3-image1.webp
 tags:
   - Schilderwerk
   - Timmerwerk
