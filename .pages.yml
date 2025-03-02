@@ -5,6 +5,7 @@ content:
     label: General Settings
     path: _src/_data
     type: file
+    filename: site.yml
     fields:
       - { name: "title", label: "Title", type: "string" }
       - { name: "description", label: "Description", type: "rich-text" }
