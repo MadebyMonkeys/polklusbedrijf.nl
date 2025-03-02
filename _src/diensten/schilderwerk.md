@@ -1,9 +1,15 @@
 ---
-title: Schilder werk
+title: Schilderwerk
 image: /img/diensten/schilderwerk.webp
 metas:
   title: =title
   description: =description
+description: >-
+  Schilderwerk, in de breedste zin van het woord. Denk aan het schilderen van
+
+  buitengevels, muren, deuren, kozijnen, meubels, trappen, balustrades en nog veel
+
+  meer.
 ---
 
 # Schilderwerk

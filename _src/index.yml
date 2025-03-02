@@ -1,36 +1,33 @@
-layout: layouts/pages/home.vto
-title: Homepage
-description: Homepage beschrijving
-metas:
-  description: =description
-  title: =title
-menu:
-  visible: true
-  title: Home
-  url: /
-  order: 1
-hasCarousel: true
 hero_section:
   subtitle: Welkom bij Pol klusbedrijf
   title: Bouwt uw droom tot werkelijkheid
-  body: >-
-    Geen huis is het zelfde, elke smaak is anders en soms dienen projecten
+  body: Geen huis is het zelfde, elke smaak is anders en soms dienen projecten
     geheel op maat te worden uitgewerkt. Pol Klusbedrijf staat voor u klaar, is
     flexibel en stelt uw tevredenheid hoog in het vaandel.
   image: /img/hero-image.webp
 projects_section:
   subtitle: Projecten
-  title: Projecten welke ik heb mogen doen
+  title: Projecten die ik heb uitgevoerd
   button:
     title: Alle projecten
     url: /projecten
+services_section:
+  subtitle: Diensten
+  title: Ik kan u helpen met de volgende diensten
+  button:
+    title: All onze diensten
+    url: /diensten
+layout: layouts/pages/home.vto
+title: Homepage
+metas:
+  description: =description
+  title: =title
 about_section:
   subtitle: Over Pol Klusbedrijf
   title: Uw betrouwbare partner in bouwvakmanschap.
-  body: >-
-    Door zijn ruime kennis en ervaring is Ricardo Pol de aangewezen vakman om al
-    uw klussen in en om uw huis aan toe te vertrouwen. Meedenkend, transparant,
-    eerlijkheid en openheid is waar hij voor staat.
+  body: Door zijn ruime kennis en ervaring is Ricardo Pol de aangewezen vakman om
+    al uw klussen in en om uw huis aan toe te vertrouwen. Meedenkend,
+    transparant, eerlijkheid en openheid is waar hij voor staat.
   check_list:
     - text: Ongeëvenaarde expertise met tientallen jaren ervaring
     - text: Toewijding aan kwaliteit en precisie
@@ -38,12 +35,13 @@ about_section:
   button:
     title: Over mij
     url: /about
-services_section:
-  subtitle: Diensten
-  title: Ik kan u helpen met de volgende diensten
-  button:
-    title: All onze diensten
-    url: /diensten
 testimonials_section:
   subtitle: Reviews
   title: Wat andere zeggen over mij
+hasCarousel: true
+description: Homepage beschrijving
+menu:
+  visible: true
+  title: Home
+  url: /
+  order: 1

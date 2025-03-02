@@ -1,16 +1,13 @@
 ---
-title: "Trap renovatie"
+title: Traprenovatie
 description: Korte project beschrijving
-image: "/img/project-3/project-resultaat.webp"
-
+image: /img/project-3/project-resultaat.webp
 metas:
   title: =title
   description: =description
-
 images:
-  - "/img/project-3/project-resultaat.webp"
-  - "/img/project-3/project-image1.webp"
-
+  - /img/project-3/project-resultaat.webp
+  - /img/project-3/project-image1.webp
 tags:
   - Schilderwerk
   - Timmerwerk
