@@ -273,6 +273,7 @@ collections:
     fields:
       - { name: "title", label: "Title", widget: "string" }
       - { name: "description", label: "Description", widget: "text" }
+      - { name: "image", label: "Featured Image", widget: "image", multiple: false }
       - { name: "images", label: "Images", widget: "image", multiple: true }
       - { name: "body", label: "body", widget: "text" }
 
