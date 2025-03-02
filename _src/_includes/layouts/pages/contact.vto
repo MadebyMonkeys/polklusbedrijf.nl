@@ -22,37 +22,23 @@ layout: layouts/page.vto
                 </li>
             </ul>
         </div>
-        <form class="flow" action="/send-mail.php" method="post">
-            <div class="field">
-                <label for="name">Naam:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-
-            <div class="field">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="field">
-                <label for="phone">Telefoonnummer:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-
-            <div class="field">
-                <label for="message">Bericht:</label><br>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-
-            <!-- 🛡 reCAPTCHA v3 -->
-            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-
-            <!-- Honeypot field (hidden from real users) -->
-            <div style="position: absolute; left: -9999px;">
-                <label for="honeypot">Laat dit veld leeg:</label>
-                <input type="text" id="honeypot" name="honeypot">
-            </div>
-
-            <button class="button" type="submit">Verstuur</button>
+        <form action="send-mail.php" method="POST">
+            <label for="name">Naam *</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Telefoon</label>
+            <input type="tel" id="phone" name="phone">
+    
+            <label for="message">Bericht *</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <!-- reCAPTCHA v3 (invisible, werkt automatisch) -->
+            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+    
+            <button type="submit">Verstuur</button>
         </form>
     </div>
 </section>
