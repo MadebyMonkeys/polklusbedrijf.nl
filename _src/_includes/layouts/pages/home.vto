@@ -8,7 +8,7 @@ layout: layouts/page.vto
     <h2 class="section-title h1">{{ hero_section.title }}</h2>
     {{ hero_section.body |> md }}
   </div>
-  <img src="{{ hero_section.image }}" alt="hero image">
+  <img src="{{ hero_section.image |> toWebp }}" alt="hero image">
 </section>
 <section class="[ projecten ] [ full-width ] [ region bg-primary-50 ]">
   <h3 class="section-subtitle">{{ projects_section.subtitle }}</h3>
@@ -53,7 +53,7 @@ layout: layouts/page.vto
   {{ set services = search.pages("type=service", "order=desc").slice(0, 6) }}
   {{ for service of services }}
     <a href="{{ service.url }}" class="service card">
-      <img src="{{ service.image }}" alt="">
+      <img src="{{ service.image |> toWebp }}" alt="">
       <span class="flex ai--center">{{ service.title }} <ion-icon name="arrow-forward-circle-outline"></ion-icon></span>
     </a>
   {{ /for }}

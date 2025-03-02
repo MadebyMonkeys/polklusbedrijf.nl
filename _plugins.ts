@@ -5,14 +5,12 @@ import metas from "lume/plugins/metas.ts";
 import robots from "lume/plugins/robots.ts";
 import sass from "lume/plugins/sass.ts";
 import svgo from "lume/plugins/svgo.ts";
-import transform_images from "lume/plugins/transform_images.ts";
+import transformImages from "lume/plugins/transform_images.ts";
 import decapCMS from "lume/plugins/decap_cms.ts";
 
 export default function () {
   return (site: Site) => {
     site
-      .copy("js")
-      .copy("static", ".")
       .filter(
         "getRelatedPosts",
         (postsList, tags) =>
@@ -22,6 +20,10 @@ export default function () {
             }
           }),
       )
+      .filter("toWebp", (value) => {
+        if (!value || typeof value !== "string") return value; // Als het geen string is, geef de originele waarde terug
+        return value.replace(/\.(jpg|jpeg|png)$/i, ".webp");
+      })
       .use(date())
       .use(esbuild({ target: "es6" }))
       .use(inline())
@@ -29,7 +31,14 @@ export default function () {
       .use(robots())
       .use(sass())
       .use(svgo())
-      .use(transform_images())
-      .use(decapCMS());
+      .use(transformImages({
+        extensions: [".png", ".jpg"], // Zet PNG en JPG om
+        format: "webp", // WebP is de output
+        quality: 80, // Stel de WebP kwaliteit in
+        cache: true, // Zorgt dat Lume niet steeds opnieuw converteert
+      }))
+      .use(decapCMS())
+      .copy("js")
+      .copy("static", ".");
   };
 }

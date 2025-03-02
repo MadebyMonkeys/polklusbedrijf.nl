@@ -10,7 +10,7 @@ layout: layouts/page.vto
             {{ content }}
         </div>
         <div class="image">
-            <img  class="image--rounded" src="{{ about_section.image }}" alt="{{ about_section.title }}">
+            <img  class="image--rounded" src="{{ about_section.image |> toWebp }}" alt="{{ about_section.title }}">
         </div>
     </div>
 </article>

@@ -1,13 +1,13 @@
 ---
 title: Mezzanine
 description: Mezzanine, tussenwanden, verdiepingsvloer
-image: /img/uploads/mezzanine-resultaat.webp
+image: /img/mezzanine-resultaat.webp
 metas:
   title: =title
   description: =description
 images:
-  - /img/uploads/mezzanine.jpg
-  - /img/uploads/mezzanine-resultaat.webp
+  - /img/mezzanine.webp
+  - /img/mezzanine-resultaat.webp
 tags:
   - Schilderwerk
   - Timmerwerk

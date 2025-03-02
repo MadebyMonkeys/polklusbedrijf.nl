@@ -19,7 +19,7 @@ metas:
 about_section:
   subtitle: "Over mij"
   title: "Meer dan een decennium aan ervaring"
-  image: "/img/uploads/about-img.webp"
+  image: "/img/about-img.webp"
 
 testimonials_section:
   subtitle: testimonials

@@ -10,7 +10,7 @@ layout: layouts/page.vto
         {{ set services = search.pages("type=service", "order=desc") }}
         {{ for service of services }}
         <a href="{{ service.url }}" class="service card">
-            <img src="{{ service.image }}" alt="{{ service.title }}">
+            <img src="{{ service.image |> toWebp }}" alt="{{ service.title }}">
             <span class="flex ai--center">{{ service.title }} <ion-icon name="arrow-forward-circle-outline"></ion-icon></span>
         </a>
         {{ /for }}

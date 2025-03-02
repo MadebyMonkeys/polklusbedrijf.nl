@@ -1,6 +1,6 @@
 {{ for index, project of projecten }}
 <a class="project-list__post" href="{{ project.url }}">
-    <img class="project-list__post--image" src="{{ project.image }}" alt="{{ project.title }}">
+    <img class="project-list__post--image" src="{{ project.image |> toWebp }}" alt="{{ project.title }}">
     <div class="project-list__post--info flow">
         <h3 class="project-list__post--title">{{ project.title }}</h3>
         <div class="project-list__post--tags">
