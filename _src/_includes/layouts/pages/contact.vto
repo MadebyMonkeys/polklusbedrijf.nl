@@ -22,32 +22,31 @@ layout: layouts/page.vto
                 </li>
             </ul>
         </div>
-        <form class="flow" action="/send-mail.php" method="POST">
-
-            <div class="field">
-                <label for="name">Naam *</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-
-            <div class="field">
-                <label for="email">E-mail *</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="field">
-                <label for="phone">Telefoon</label>
-                <input type="tel" id="phone" name="phone">
-            </div>
-
-            <div class="field">
-                <label for="message">Bericht *</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
+        <form action="send-mail.php" method="POST" class="flow">
     
-            <!-- reCAPTCHA v3 (invisible, werkt automatisch) -->
             <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-    
-            <button class="button" type="submit">Verstuur</button>
+            
+            <div class="field-group">
+                <label for="name">Naam</label>
+                <input class="u-mv" id="name" type="text" name="name" required>
+            </div>
+            
+            <div class="field-group">
+                <label for="email">Email</label>
+                <input class="u-mv" id="email" type="email" name="email" required>
+            </div>
+            
+            <div class="field-group">
+                <label for="phone">Telefoon nr.</label>
+                <input class="u-mv" id="phone" type="tel" name="telefoon">
+            </div>
+            
+            <div class="field-group">
+                <label for="message">Bericht</label>
+                <textarea class="u-mv" name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+            
+            <button class="button" type="submit">Verzend</button>
         </form>
     </div>
 </section>
