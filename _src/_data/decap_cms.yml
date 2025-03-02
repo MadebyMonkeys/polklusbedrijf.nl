@@ -46,7 +46,7 @@ collections:
         file: "_src/_data/company.yml"
         fields:
           - { name: "name", label: "Naam", widget: "string" }
-          - { name: "logo", label: "Logo", widget: "image" }
+          - { name: "logo", label: "Logo", widget: "image", default: "/img/pkb-logo.svg"  }
           - { name: "kvk", label: "Kvk nummer", widget: "string" }
 
           - name: contact

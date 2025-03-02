@@ -1,13 +1,13 @@
 ---
 title: Traprenovatie
 description: Korte project beschrijving
-image: "/img/traprenovatie-resultaat.jpg"
+image: "/img/uploads/traprenovatie-resultaat.jpg"
 metas:
   title: =title
   description: =description
 images:
-  - /img/traprenovatie.jpg
-  - /img/traprenovatie-resultaat.jpg
+  - /img/uploads/traprenovatie.jpg
+  - /img/uploads/traprenovatie-resultaat.jpg
 tags:
   - Schilderwerk
   - Timmerwerk
