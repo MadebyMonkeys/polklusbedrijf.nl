@@ -1,13 +1,13 @@
 ---
 title: Maatwerkkast op zolder
 description: Maatwerkkast, kastwand, zolder, multifunctionele ruimte, opbergruimte
-image: /img/project-1-resultaat.webp
+image: /img/maat-werk-kast-zolder-resultaat.webp
 metas:
   title: =title
   description: =description
 images:
-  - /img/project-1-image1.webp
-  - /img/project-1-resultaat.webp
+  - /img/maat-werk-kast-zolder.webp
+  - /img/maat-werk-kast-zolder-resultaat.webp
 tags:
   - Schilderwerk
   - Timmerwerk
