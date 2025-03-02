@@ -17,5 +17,16 @@
     <script src="/js/fslightbox.js"></script>
 {{ /if }}
 
+{{ if reCapatcha }}
+<script src="https://www.google.com/recaptcha/api.js?render=6Lc8H-cqAAAAAJw4gtO3FFK7iobq-JhM6-aqyg-l"></script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute("6Lc8H-cqAAAAAJw4gtO3FFK7iobq-JhM6-aqyg-l", { action: "submit" }).then(function(token) {
+            document.getElementById("g-recaptcha-response").value = token;
+        });
+    });
+</script>
+{{ /if }}
+
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
