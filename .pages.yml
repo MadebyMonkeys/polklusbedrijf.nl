@@ -1,9 +1,9 @@
 media: _src/img
 output: /img
 content:
-  - name: general
+  - name: site
     label: General Settings
-    path: _src/_data/site.yml
+    path: _src/_data
     type: file
     fields:
       - { name: "title", label: "Title", type: "string" }
