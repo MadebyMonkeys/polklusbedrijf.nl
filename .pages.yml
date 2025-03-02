@@ -1,0 +1,14 @@
+media: /img
+content:
+  - name: general
+    label: General Settings
+    path: _src/_data
+    type: file
+    filename: site.yml
+    fields:
+      - { name: "title", label: "Title", type: "string" }
+      - { name: "description", label: "Description", type: "string" }
+      - { name: "icon", label: "Icon", type: "image" }
+      - { name: "lang", label: "Language", type: "string" }
+      - { name: "generator", label: "Generator", type: "boolean" }
+    
