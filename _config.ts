@@ -43,6 +43,25 @@ site.addEventListener("afterBuild", async () => {
   // 📌 **3. Verwijder ongebruikte afbeeldingen uit `/img/` in `_site/`**
   const imgPath = `${buildPath}/img`;
 
+  async function removeEmptyDirectories(dir: string) {
+    for await (const entry of Deno.readDir(dir)) {
+      const subPath = `${dir}/${entry.name}`;
+      if (entry.isDirectory) {
+        await removeEmptyDirectories(subPath); // Recursief checken
+        try {
+          await Deno.remove(subPath); // Probeer directory te verwijderen
+          console.log(`🗑️ Verwijderd lege map: ${subPath}`);
+        } catch (err) {
+          if (err instanceof Deno.errors.NotEmpty) {
+            console.log(`⚠️ Map is niet leeg: ${subPath}, overslaan...`);
+          } else {
+            throw err;
+          }
+        }
+      }
+    }
+  }
+
   try {
     for await (const file of Deno.readDir(imgPath)) {
       const filePath = `/img/${file.name}`;
@@ -51,6 +70,9 @@ site.addEventListener("afterBuild", async () => {
         await Deno.remove(`${imgPath}/${file.name}`);
       }
     }
+
+    // **📌 4. Verwijder lege directories in /img/**
+    await removeEmptyDirectories(imgPath);
   } catch (err) {
     if (err instanceof Deno.errors.NotFound) {
       console.log("⚠️ Geen 'img' map gevonden, overslaan...");
