@@ -300,15 +300,21 @@ collections:
       - { name: "body", label: "body", widget: "text" }
 
 
-
   - name: "testimonials"
     label: "Testimonials"
-    file: "_src/_data/testimonials.yml"
-    format: yaml
-    fields:
-      - label: "Testimonials"
-        name: "testimonials"
-        widget: "list"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "testimonials"
+        label: "Testimonials"
+        file: "_src/_data/testimonials.yml"
+        format: yaml
         fields:
-          - { label: "Naam", name: "name", widget: "string" }
-          - { label: "Testimonial", name: "body", widget: "text" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Naam", name: "name", widget: "string" }
+              - { label: "Testimonial", name: "body", widget: "text" }
+        
