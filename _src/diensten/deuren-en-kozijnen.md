@@ -1,6 +1,6 @@
 ---
 title: Deuren en Kozijnen
-image: /img/diensten/deuren-en-kozijnen.webp
+image: /uploads/deuren-en-kozijnen.webp
 metas:
   title: =title
   description: =description

@@ -1,6 +1,6 @@
 ---
 title: Onderhoud
-image: /img/diensten/onderhoud.webp
+image: /uploads/onderhoud.webp
 metas:
   title: =title
   description: =description

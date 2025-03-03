@@ -1,6 +1,6 @@
 ---
 title: Beton en Sleufwerk
-image: /img/diensten/beton-en-sleufwerk.webp
+image: /uploads/beton-en-sleufwerk.webp
 metas:
   title: =title
   description: =description

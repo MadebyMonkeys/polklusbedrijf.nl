@@ -1,6 +1,6 @@
 ---
 title: Timmerwerk
-image: /img/diensten/timmerwerk.webp
+image: /uploads/timmerwerk.webp
 metas:
   title: =title
   description: =description

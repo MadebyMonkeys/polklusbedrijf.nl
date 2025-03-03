@@ -1,6 +1,6 @@
 ---
 title: Schilderwerk
-image: /img/diensten/schilderwerk.webp
+image: /uploads/schilderwerk.webp
 metas:
   title: =title
   description: =description

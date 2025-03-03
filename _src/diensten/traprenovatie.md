@@ -1,6 +1,6 @@
 ---
 title: Traprenovatie
-image: /img/diensten/traprenovatie.webp
+image: /uploads/traprenovatie.webp
 metas:
   title: =title
   description: =description
