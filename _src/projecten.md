@@ -6,9 +6,8 @@ menu:
   url: /projecten
   order: 4
 title: Projecten
-description: Ik heb over de loop der tijd al vele projecten mogen maken enkel
-  zijn het er zoveel dat ik ze niet allemaal kan laten zien maar zie hier een
-  kleine greep uit mijn portfolio.
+description: In de loop der tijd heb ik al vele projecten mogen uitvoeren, zie
+  hier een kleine greep uit mijn portfolio.
 metas:
   title: =title
   description: =description
