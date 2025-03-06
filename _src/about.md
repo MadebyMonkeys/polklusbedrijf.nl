@@ -2,7 +2,7 @@
 layout: layouts/pages/about.vto
 title: Over mij
 metas:
-  title: Over polklusbedrijf
+  title: Over Pol Klusbedrijf Waalwijk
   description: =description
 about_section:
   subtitle: Over mij
