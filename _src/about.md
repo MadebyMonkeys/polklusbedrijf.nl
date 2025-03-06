@@ -19,7 +19,7 @@ menu:
   url: /about
   order: 2
 ---
-Mijn naam is Ricardo Pol en ik ben de oprichter van Pol Klusbedrijf. De
+Mijn naam is Ricardo Pol en ik ben de oprichter van Pol Klusbedrijf, gevestigd in Waalwijk. De
 afgelopen 15 jaar heb ik erg veel praktijkervaring opgedaan op het gebied van
 bouw-, sloop-, timmer-, renovatie- en schilderwerk. Hierdoor heb ik in 2017
 besloten een eenmanszaak op te zetten. Mijn kennis heb ik verder uitgebreid met
