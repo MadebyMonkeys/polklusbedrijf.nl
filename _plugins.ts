@@ -8,6 +8,8 @@ import svgo from "lume/plugins/svgo.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 import decapCMS from "lume/plugins/decap_cms.ts";
 
+import { nl } from "npm:date-fns/locale/nl";
+
 export default function () {
   return (site: Site) => {
     site
@@ -24,7 +26,9 @@ export default function () {
         if (!value || typeof value !== "string") return value; // Als het geen string is, geef de originele waarde terug
         return value.replace(/\.(jpg|jpeg|png)$/i, ".webp");
       })
-      .use(date())
+      .use(date({
+        locales: { nl },
+      }))
       .use(esbuild({ target: "es6" }))
       .use(inline())
       .use(metas())

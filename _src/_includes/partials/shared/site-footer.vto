@@ -9,11 +9,14 @@
 
 <script src="/js/main.js"></script>
 
-{{ if hasCarousel == true }}
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+{{ if hasCarousel }}
     <script src="/js/carousel.js"></script>
 {{ /if }}
 
-{{ if hasLightbox == true }}
+{{ if hasLightbox }}
     <script src="/js/fslightbox.js"></script>
 {{ /if }}
 
@@ -27,6 +30,3 @@
     });
 </script>
 {{ /if }}
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
