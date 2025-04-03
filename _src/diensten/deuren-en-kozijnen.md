@@ -1,5 +1,6 @@
 ---
 title: Deuren en Kozijnen
+order: 2
 image: /uploads/deuren-en-kozijnen.webp
 metas:
   title: =title

@@ -8,7 +8,7 @@ layout: layouts/page.vto
     <h2 class="section-title h1">{{ hero_section.title }}</h2>
     {{ hero_section.body |> md }}
   </div>
-  <img src="{{ hero_section.image |> toWebp }}" alt="hero image">
+  <img src="{{ hero_section.image }}" alt="hero image">
 </section>
 <section class="[ projecten ] [ full-width ] [ region bg-primary-50 ]">
   <h3 class="section-subtitle">{{ projects_section.subtitle }}</h3>
@@ -17,7 +17,7 @@ layout: layouts/page.vto
     <a href="{{ projects_section.button.url }}" class="button animated">{{ projects_section.button.title }} <ion-icon name="arrow-forward-outline"></ion-icon></a>
   </div>
   <hr>
-  {{ set projecten = search.pages("type=project", "order=desc").slice(0, 3) }}
+  {{ set projecten = search.pages("type=project", "featured=true").slice(0, 6) }}
   <div class="grid-auto-fit" data-cols="two">
     {{ include "projects-list.vto" { projecten } }}
   </div>
@@ -50,10 +50,10 @@ layout: layouts/page.vto
   </div>
   <hr />
   <div class="grid-auto-fit" data-cols="three">
-  {{ set services = search.pages("type=service", "order=desc").slice(0, 6) }}
+  {{ set services = search.pages("type=service", "order").slice(0, 6) }}
   {{ for service of services }}
     <a href="{{ service.url }}" class="service card">
-      <img src="{{ service.image |> toWebp }}" alt="">
+      <img src="{{ service.image }}" alt="">
       <span class="flex ai--center">{{ service.title }} <ion-icon name="arrow-forward-circle-outline"></ion-icon></span>
     </a>
   {{ /for }}

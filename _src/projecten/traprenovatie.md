@@ -2,6 +2,7 @@
 title: Traprenovatie
 description: Korte project beschrijving
 image: "/uploads/traprenovatie-resultaat.webp"
+featured: false
 metas:
   title: =title
   description: =description

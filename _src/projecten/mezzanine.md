@@ -2,6 +2,8 @@
 title: Mezzanine
 description: Mezzanine, tussenwanden, verdiepingsvloer
 image: /uploads/mezzanine-resultaat.webp
+featured: true
+type: "project"
 metas:
   title: =title
   description: =description

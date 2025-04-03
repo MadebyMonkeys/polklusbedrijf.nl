@@ -6,7 +6,7 @@ templateEngine: [vto,md]
 <div class="[ has-sidebar ] [ ] [ region ]">
     <div class="has-sidebar__content flow">
         <figure class="banner">
-            <img class="image--rounded" src="{{ image |> toWebp }}" alt="">
+            <img class="image--rounded" src="{{ image }}" alt="">
         </figure>
         {{- content |> md -}}
     </div>

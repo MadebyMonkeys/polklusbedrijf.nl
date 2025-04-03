@@ -1,5 +1,6 @@
 ---
 title: Schilderwerk
+oder: 5
 image: /uploads/schilderwerk.webp
 metas:
   title: =title

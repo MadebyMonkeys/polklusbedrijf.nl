@@ -1,5 +1,6 @@
 ---
 title: Traprenovatie
+order: 1
 image: /uploads/traprenovatie.webp
 metas:
   title: =title

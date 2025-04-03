@@ -1,5 +1,6 @@
 ---
 title: Onderhoud
+order: 6
 image: /uploads/onderhoud.webp
 metas:
   title: =title

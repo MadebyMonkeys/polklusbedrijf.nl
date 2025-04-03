@@ -1,5 +1,6 @@
 ---
 title: Timmerwerk
+order: 3
 image: /uploads/timmerwerk.webp
 metas:
   title: =title
